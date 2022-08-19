@@ -1,1 +1,0 @@
-# group_project_education_app
