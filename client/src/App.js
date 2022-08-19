@@ -1,6 +1,8 @@
+import Navigation from './containers/Navigation'
+
 function App() {
   return (
-    <p>Hello World!</p>
+    <Navigation></Navigation>
   );
 }
 
