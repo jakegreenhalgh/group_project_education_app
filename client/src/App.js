@@ -1,8 +1,10 @@
 import Navigation from './containers/Navigation'
+import CategoryContainer from './containers/CategoryContainer';
 
 function App() {
   return (
-    <Navigation></Navigation>
+    <CategoryContainer/>
+    // <Navigation></Navigation>
   );
 }
 
