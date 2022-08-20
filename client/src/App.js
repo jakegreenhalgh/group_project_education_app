@@ -4,7 +4,10 @@ import NavgationContainer from './containers/Navigation';
 
 function App() {
   return (
+    <>
       <NavgationContainer></NavgationContainer>
+    
+    </>
   );
 }
 

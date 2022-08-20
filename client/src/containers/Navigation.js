@@ -4,6 +4,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CategoryContainer from "./CategoryContainer";
 import NavBar from "../components/NavBar";
+import HomePage from "../HomePage";
 function NavgationContainer() {
 
 /* <Route exact path="/" element={<HomePage></HomePage>} /> */
@@ -14,7 +15,7 @@ return (
             <NavBar />
 
         <Routes>
-            
+            <Route exact path="/" element={< HomePage/>} />
             <Route exact path="/categories" element={< CategoryContainer/>} />
             <Route exact path="*"></Route>
         </ Routes>
