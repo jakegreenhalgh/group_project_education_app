@@ -16,6 +16,19 @@ const createRouter = function (collection) {
             res.json({ status: 500, error: err });
          });
     })
+
+    router.get('/id', (req, res) => {
+        collection
+        .find()
+        .toArray()
+        //  console.log(collection);
+        //  .then((docs) => res.json(docs[req.params.id]))
+        //  .catch((err) => {
+        //     console.error(err);
+        //     res.status(500);
+        //     res.json({ status: 500, error: err });
+        //  });
+    })
     
     return router
 }

@@ -66,7 +66,7 @@ db.categories.insertMany(
                                                     ],
                                         "questions": [
                                                         {
-                                                        "number": 1,
+                                                        "number": "1",
                                                         "title": "Why does Jacob hate wind farms?",
                                                         "choices":
                                                             [   
@@ -78,19 +78,19 @@ db.categories.insertMany(
                                                         "answer": {"option3": "He saw too many wind farm images in his previous job"}
                                                         },
                                                         {
-                                                            "number": 2,
-                                                            "title": "Why does the UK gov not invest more in renewables?",
+                                                            "number": "2",
+                                                            "title": "Why does the UK Gov not invest more in renewables?",
                                                             "choices":
                                                                 [   
-                                                                {"option1": "Tories be bad"},
+                                                                {"option1": "Tories be crazy"},
                                                                 {"option2": "The Tories are extremely bad"},
-                                                                {"option3": "They're just having a short 12 year blip of ruining the country, they're sort it soon. They promise"},
-                                                                {"option4": "They're all in the pocket of Big Oil and are also awful people"}
+                                                                {"option3": "They're just having a short 12 year blip of ruining the country, they'll sort it soon. They promise"},
+                                                                {"option4": "They're all in the pocket of Big Oil and are also awful people. All other options are valid"}
                                                                 ],
-                                                            "answer": {"option4": "They're all in the pocket of Big Oil and are also awful people"}
+                                                            "answer": {"option4": "They're all in the pocket of Big Oil and are also awful people. All other options are valid"}
                                                             },
                                                         {
-                                                            "number": 3,
+                                                            "number": "3",
                                                             "title": "Generic Renewables Question",
                                                             "choices":
                                                                 [   
@@ -109,15 +109,3 @@ db.categories.insertMany(
         ] 
 
 )
-
-// quiz{
-//     questions[
-//     question1{
-//     question.title
-//     question.choices[
-//         choice 1, 
-//         choice 2,
-//         choice 3,
-//         choice 4]
-//     question.correctAwnser{choice 4} 
-//     }]	}
