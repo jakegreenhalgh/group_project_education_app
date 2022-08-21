@@ -4,10 +4,7 @@ export const getCategories = () => {
     return fetch(baseURL)
     .then(res => res.json())
 }
-export const showCategory = (id) => {
-    return fetch(baseURL + id)
-    .then(res => res.json())
-}
+
     // (req, res => res.json(categories[req.params.id]) ??
 
 
