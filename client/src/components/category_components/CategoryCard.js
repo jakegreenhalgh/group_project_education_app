@@ -10,6 +10,12 @@ const CategoryCard = ({ category }) => {
         <div className='Nav-bar'>
         // Code to return nav bar here
         </div>
+        <div className='Category-Header-Image'>
+        <img src={category.header_image}/>
+        </div>
+        <div className = 'Topic-menu'>
+            {/* Need a list of topic images and titles  */}
+        </div>
         </>
         
     
