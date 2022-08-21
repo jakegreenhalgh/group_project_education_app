@@ -3,7 +3,14 @@ import {useState, useEffect } from 'react';
 // Topic import/ route required? 
 
 const CategoryCard = ({ category }) => {
-    // require a state here for topic click? 
+
+const topics = categories.topics.map(topic => {
+    return <Topic
+        key= {topic._id}
+        topic= {topic}
+    />
+});
+
 
     return (
         <>
@@ -14,22 +21,11 @@ const CategoryCard = ({ category }) => {
         <img src={category.header_image}/>
         </div>
         <div className = 'Topic-menu'>
-            {/* Need a list of topic images and titles  */}
+           {topics}
+           {/* Would like to like topic images to topic cards here- new component name?- Discuss with group */}
         </div>
         </>
-        
     
     )
 
-
-    }
-
-
-
-
-
-// Large header image of the chosen category
-// Display of images from category, with a title that has on click function to take to topic. 
-
-// 
-// return everything in the display
+    };
