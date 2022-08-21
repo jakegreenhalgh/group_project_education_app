@@ -5,20 +5,27 @@ const TopicCard = ({ topic }) =>{
     // Didn't use any states as I couldn't see we would require any, as we are displaying only. 
 
     return (
-        //Nav div here
+        <>
+        // Insert Nav here
+        // Show topic image header
         <div className='Topic-Header-Image'>
-            <{topic.image}/>
+           <img src={topic.image}/>
         </div>
-
+        // Show topic text 
+        <div className='Topic-body-text'>
+            
+        </div>
+        // Show small topic image (keep this same initially.)
+        </>
     )
 };
 
 
-// Show topic image
 
-// Show topic text 
 
-// Show small topic image (keep this same initially.)
+
+
+
 
 
 
