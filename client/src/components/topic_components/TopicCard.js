@@ -13,14 +13,17 @@ const TopicCard = ({ topic }) =>{
         </div>
         // Show topic text 
         <div className='Topic-body-text'>
-            
+            {topic.description}
         </div>
-        // Show small topic image (keep this same initially.)
+        // Show small topic image 
+        <div className='Topic-body-image'>
+            <img src={topic.small_image}/>
+        </div>
         </>
     )
 };
 
-
+export default TopicCard;
 
 
 
