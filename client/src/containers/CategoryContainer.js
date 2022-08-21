@@ -23,4 +23,4 @@ function CategoryContainer() {
       )
 }
 
-export default CategoryContainer
+export default CategoryContainer;
