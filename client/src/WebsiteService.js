@@ -5,14 +5,7 @@ export const getCategories = () => {
     .then(res => res.json())
 }
 
+    // (req, res => res.json(categories[req.params.id]) ??
 
 
 
-
-
-
-
-// export const getSightings = () => {
-//     return fetch(baseURL)
-//         .then(res => res.json())
-// }

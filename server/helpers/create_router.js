@@ -17,6 +17,20 @@ const createRouter = function (collection) {
          });
     })
 
+<<<<<<< HEAD
+    router.get('/id', (req, res) => {
+        collection
+        .find()
+        .toArray()
+        //  console.log(collection);
+        //  .then((docs) => res.json(docs[req.params.id]))
+        //  .catch((err) => {
+        //     console.error(err);
+        //     res.status(500);
+        //     res.json({ status: 500, error: err });
+        //  });
+    })
+=======
     router.get('/:id', (req, res) => {
         const id = req.params.id;
         collection
@@ -42,6 +56,7 @@ const createRouter = function (collection) {
           res.json({ status: 500, error: err });
         });
       });
+>>>>>>> main
     
     router.put('/:id', (req, res) => {
         const id = req.params.id;
