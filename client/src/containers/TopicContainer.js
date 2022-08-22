@@ -8,11 +8,11 @@ import { showCategory } from "../WebsiteService";
 const TopicContainer = () => {
 	const [topics, setTopics] = useState([]);
 
-	const {id} = useParams();
+	const {categoryId} = useParams();
 
 
     useEffect(()=>{
-        showCategory(id).then((result)=>{
+        showCategory(categoryId).then((result)=>{
           setTopics(result.content);
         })
       }, []);
@@ -20,13 +20,8 @@ const TopicContainer = () => {
 
 	return (
 		<>
-			<TopicList topics={topics}/>
-<<<<<<< HEAD
-		</
-=======
-			<p>Work pls ty</p>
+			<TopicList topics={topics} categoryId={categoryId}/>
 		</>
->>>>>>> 081423fa661d33025d2ef525b36c44da968dc85e
 	);
 };
 

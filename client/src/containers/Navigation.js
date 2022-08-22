@@ -6,6 +6,7 @@ import CategoryContainer from "./CategoryContainer";
 import NavBar from "../components/NavBar";
 import HomePage from "../HomePage";
 import TopicContainer from "./TopicContainer";
+import ContentContainer from "./ContentContainer";
 function NavgationContainer() {
 
 /* <Route exact path="/" element={<HomePage></HomePage>} /> */
@@ -21,7 +22,8 @@ return (
         <Routes>
             <Route exact path="/" element={< HomePage/>} />
             <Route exact path="/categories" element={< CategoryContainer/>} />
-            <Route path="/categories/:id" element={<TopicContainer />}/>
+            <Route path="/categories/:categoryId" element={<TopicContainer />}/>
+            <Route path="/categories/:categoryId/:contentId" element={<ContentContainer />}/>
             <Route exact path="*"></Route>
         </ Routes>
 
