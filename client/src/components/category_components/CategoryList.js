@@ -1,4 +1,4 @@
-
+import CategoryCard from "./CategoryCard"
 // mapping each category to a single entity 
 const CategoryList = (({categories}) => {
     const categoriesArray = categories.map((category) => {
