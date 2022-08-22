@@ -23,7 +23,7 @@ return (
             <Route exact path="/" element={< HomePage/>} />
             <Route exact path="/categories" element={< CategoryContainer/>} />
             <Route path="/categories/:categoryId" element={<TopicContainer />}/>
-            <Route path="/categories/:categoryId/:contentId" element={<ContentContainer />}/>
+            <Route path="/categories/:categoryId/:contentId" element={<p> Hello!</p>}/>
             <Route exact path="*"></Route>
         </ Routes>
 
