@@ -8,6 +8,7 @@ const TopicContainer = (topics) => {
 	return (
 		<>
 			<TopicList topics={topics}/>
+			<p>Work pls ty</p>
 		</>
 	);
 };

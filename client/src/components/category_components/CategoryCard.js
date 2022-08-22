@@ -1,29 +1,21 @@
-import {useState, useEffect } from 'react';
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import TopicContainer from "../../containers/TopicContainer";
 // Import the nav bar 
 // Topic import/ route required? 
 
 const CategoryCard = ({ category }) => {
 
-// const topics = categories.topics.map(topic => {
-//     return <Topic
-//         key= {topic._id}
-//         topic= {topic}
-//     />
-// });
-
 // Would like to like topic images to topic cards here- new component name?- Discuss with group */
     return (
-        <>
+    <>
         <div className='Nav-bar'>
-            <p>{category.category}</p>
-        // Code to return nav bar here
+            <Link to={`/categories/${category._id}`}> <h2>{category.category}</h2></Link>
         </div>
         <div className='Category-Header-Image'>
-        <img src={category.header_image}/>
+        <img src={category.image}/>
+        <p>{category.description}</p>
         </div>
-        <div className = 'Topic-menu'>
-        </div>
-        </>
+    </>
     
     )
 
