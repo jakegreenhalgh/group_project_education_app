@@ -8,7 +8,7 @@ const TopicContainer = (topics) => {
 	return (
 		<>
 			<TopicList topics={topics}/>
-		</
+		</>
 	);
 };
 
