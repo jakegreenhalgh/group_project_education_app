@@ -8,6 +8,7 @@ db.categories.insertMany(
                     "description": "This is the description for the category page. Biodiversity is the first category we've chosen and I don't really know what it means",
                     "content": [
                                         {
+                                            
                                             "type": "article",
                                             "name": "Scotland's Amazing Peatlands",
                                             "url": "https://www.wwf.org.uk/scotlands-amazing-peatland",
