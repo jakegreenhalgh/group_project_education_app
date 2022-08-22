@@ -6,7 +6,7 @@ export const getCategories = () => {
 }
 export const showCategory = (id) => {
     return fetch(baseURL + id)
-    .then(res => res.json())
+    .then(res => res.json(id))
 }
     // (req, res => res.json(categories[req.params.id]) ??
 

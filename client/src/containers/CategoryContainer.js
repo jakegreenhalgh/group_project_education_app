@@ -18,7 +18,7 @@ function CategoryContainer() {
 
       return (
         <>
-        <p>{message[0].message}</p>
+        {/* <p>{message[0].message}</p> */}
         </>
       )
 }
