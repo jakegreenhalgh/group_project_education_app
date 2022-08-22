@@ -27,6 +27,3 @@ function CategoryContainer() {
 
 export default CategoryContainer;
 
-
-
-
