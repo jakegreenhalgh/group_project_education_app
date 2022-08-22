@@ -1,7 +1,7 @@
 // React Router
 // Components - NavBar
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
 import CategoryContainer from "./CategoryContainer";
 import NavBar from "../components/NavBar";
 import HomePage from "../HomePage";
@@ -23,7 +23,7 @@ return (
             <Route exact path="/" element={< HomePage/>} />
             <Route exact path="/categories" element={< CategoryContainer/>} />
             <Route path="/categories/:categoryId" element={<TopicContainer />}/>
-            <Route path="/categories/:categoryId/:contentId" element={<p> Hello!</p>}/>
+            <Route path="/categories/:categoryId/:contentId" element={<ContentContainer/>}/>
             <Route exact path="*"></Route>
         </ Routes>
 
