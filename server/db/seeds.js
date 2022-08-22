@@ -1,4 +1,3 @@
-
 use website;
 db.dropDatabase();
 
