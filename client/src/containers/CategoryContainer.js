@@ -16,7 +16,7 @@ function CategoryContainer() {
         })
       }, []);
 
-
+      // <CategoryList categories={categories}></CategoryList>
 // passing down all the fetched categories as a prop to categories list
       return (
         <>
