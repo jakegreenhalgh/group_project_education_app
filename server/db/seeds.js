@@ -1,8 +1,3 @@
-//* Make each category appear as a collection
-// ! Be aware of brackets and re-seed Mongo to test
-//  Do the same for a quiz example
-
-
 use website;
 db.dropDatabase();
 
