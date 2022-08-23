@@ -27,7 +27,7 @@ db.categories.insertMany(
             },
 
             {   "category": "Rising Sea Levels",
-                // "image": INSERT
+                "image": "https://images.unsplash.com/photo-1503942142281-94af0aded523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJpc2luZyUyMHNlYSUyMGxldmVsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
                 "description": "As the title suggests the sea levels are rising. They are rising at double the rate they were in 1900. Did you know by 2050 lots of England (and plenty of Scotland) will be underwater? Did you know that's only 28 years away? Why is no one doing anything about this?",
                 "content": [
                     {
@@ -35,7 +35,7 @@ db.categories.insertMany(
                         "type": "facts",
                         "name": "Facts about the rising sea",
                         "url": "https://blog.historicenvironment.scot/2016/02/scotlands-dynamic-coasts/",
-                        // "image": INSERT
+                        "image": "https://images.unsplash.com/photo-1494086540177-cb524d1bc2f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmlzaW5nJTIwc2VhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
                         "text": "Rising sea levels are a result of increased global warming melting the ice caps. By 2050 to give you an idea of how much trouble we are in the sea level is expected to rise by as much as 22cm. Fun fact: The way the UK is going it's probably going to be much higher!! ",
 
                     },
@@ -44,7 +44,7 @@ db.categories.insertMany(
                         "type": "facts",
                         "name": "Skara Brae and the rising sea levels",
                         "url": "https://yaleclimateconnections.org/2019/04/stone-age-village-could-be-lost-2/",
-                        // "image": INSERT
+                        "image": "https://images.unsplash.com/photo-1626707472173-9316cbfd360a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
                         "text": "Skara Brae is an ancient stone age coastal village on the island of Orkney. It's actually older than the pyramids, but weirdly no one seems to care about this. With the rising sea, this amazing presereved historic site will probably be underwater.",
                     }
                 ]
