@@ -34,18 +34,18 @@ db.categories.insertMany(
                         "_id": ObjectId(),
                         "type": "facts",
                         "name": "Facts about the rising sea",
-                        "url":
-                        "image":
-                        "text":,
+                        "url": "https://blog.historicenvironment.scot/2016/02/scotlands-dynamic-coasts/",
+                        // "image": INSERT
+                        "text": "Rising sea levels are a result of increased global warming melting the ice caps. By 2050 to give you an idea of how much trouble we are in the sea level is expected to rise by as much as 22cm. Fun fact: The way the UK is going it's probably going to be much higher!! ",
 
                     },
                     {
                         "_id": ObjectId(),
                         "type": "facts",
                         "name": "Skara Brae and the rising sea levels",
-                        "url":
-                        "image":
-                        "text":,
+                        "url":,
+                        // "image": INSERT
+                        "text": "Skara Brae is an ancient stone age coastal village on the island of Orkney. It's actually older than the pyramids, but weirdly no one seems to care about this. With the rising sea, this amazing presereved historic site will probably be underwater.",
                     }
                 ]
             
@@ -60,7 +60,7 @@ db.categories.insertMany(
                         "type": "facts",    
                         "name": "Why deforestation is really bad in general"
                         "url":
-                        "image":
+                        // "image": INSERT 
                         "text":,
 
                     },
@@ -69,7 +69,7 @@ db.categories.insertMany(
                         "type": "facts",
                         "name": "Deforestation adn the Amazon Rainforest "
                         "url":
-                        "image":
+                        // "image": INSERT
                         "text":,
                     }
                 ]
