@@ -43,7 +43,7 @@ db.categories.insertMany(
                         "_id": ObjectId(),
                         "type": "facts",
                         "name": "Skara Brae and the rising sea levels",
-                        "url":,
+                        "url": "https://yaleclimateconnections.org/2019/04/stone-age-village-could-be-lost-2/",
                         // "image": INSERT
                         "text": "Skara Brae is an ancient stone age coastal village on the island of Orkney. It's actually older than the pyramids, but weirdly no one seems to care about this. With the rising sea, this amazing presereved historic site will probably be underwater.",
                     }
