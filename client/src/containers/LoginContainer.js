@@ -1,7 +1,7 @@
 // Components - CategoryList, CategoryCard
 import {getUsers, loginActiveUser, logoutUsers} from '../LoginService'
 import {useState, useEffect, useRef}  from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 
 // constructs login container
@@ -69,6 +69,7 @@ const onSubmit = (event) => {
                 </div>
                 <input type="submit" value="Login" id="login" />
             </form>                
+            <Link to="/register">Create an account</Link>
             </>
         )
     
