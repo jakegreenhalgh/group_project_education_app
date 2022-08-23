@@ -1,8 +1,25 @@
 import { Chart } from "react-google-charts";
-import React from "react";
+import {useState, useEffect} from "react";
+import {useNavigate} from "react-router-dom"
+import {findActiveUser} from '../LoginService'
 
 function StatsContainer () {
 
+  const [user, setUser] = useState()
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+      findActiveUser().then((result => { setUser(result)} ))
+    console.log(user);
+      
+  }, [])
+
+
+    if(!user){
+      navigate("../login")
+        } else {
+    
     let name = "PersonName"
 
     const pieData = [
@@ -30,7 +47,7 @@ function StatsContainer () {
 
     return (
         <>
-            <h2>Hello {name}, here's your performance so far...</h2>
+            <h2>Hello {user.username}, here's your performance so far...</h2>
           <Chart
             chartType="PieChart"
             data={pieData}
@@ -47,7 +64,7 @@ function StatsContainer () {
             options={barOptions}
         />
               </>
-    )
+    )}
     }
 
 export default StatsContainer
