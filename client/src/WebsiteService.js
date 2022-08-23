@@ -14,6 +14,10 @@ export const showContent = (categoryId, contentId) => {
     .then(res => res.json())
 }
 
+
+
+
+
     // (req, res => res.json(categories[req.params.id]) ??
 
     // (req, res => res.json(categories[req.params.id]) ??

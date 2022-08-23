@@ -108,6 +108,31 @@ db.categories.insertMany(
 )
 
 
+db.users.insertMany(
+    [
+        {
+            "username": "andrew",
+            "password": 123,
+            "logged_in": "false"
+        },
+        {
+            "username": "jacob",
+            "password": 123,
+            "logged_in": "false"
+        },
+        {
+            "username": "jack",
+            "password": 123,
+            "logged_in": "false"
+        },
+        {
+            "username": "carly",
+            "password": 123,
+            "logged_in": "false"
+        }
+    ]
+)
+
 db.ourWorld.insertMany(
     [
         {   "category": "Endangered Species",
@@ -189,3 +214,4 @@ db.ourWorld.insertMany(
         }
     ]
 );
+
