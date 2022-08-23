@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { showContent } from '../../WebsiteService';
+import './topic.css';
 // Import NavBar here for use, same Nav throughout
 
 const TopicCard = ({ topic, categoryId, index }) =>{
