@@ -3,7 +3,7 @@ import React from "react";
 
 function StatsContainer () {
 
-    let name = "Jimbob"
+    let name = "PersonName"
 
     const pieData = [
         ["Quiz", "Total Questions"],
