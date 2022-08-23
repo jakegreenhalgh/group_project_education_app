@@ -10,9 +10,7 @@ function StatsContainer () {
   const navigate = useNavigate();
 
   useEffect(() => {
-      findActiveUser().then((result => { setUser(result)} ))
-    console.log(user);
-      
+      findActiveUser().then((result => { setUser(result)} ))  
   }, [])
 
 
