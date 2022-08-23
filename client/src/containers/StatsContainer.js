@@ -3,6 +3,8 @@ import React from "react";
 
 function StatsContainer () {
 
+    let name = "Jimbob"
+
     const pieData = [
         ["Quiz", "Total Questions"],
         ["Answered correctly", 11],
@@ -11,33 +13,35 @@ function StatsContainer () {
       ];
       
     const pieOptions = {
-        title: "Your performance so far...",
+        title: "How have you scored in the quizzes?",
         colors:['#B8D8BA','#EF959D', '#FCDDBC'],
       };
       
     const barData = [
-        ["Hello", "Wow! This number is high", "Eh, this number is mid tbh","Oof this number is low"],
-        ["Score", 1000, 500, 250],
+        ["Hello", "Articles you've read", "Articles you've still to read"],
+        ["Score", 12, 4],
       ];
       
     const barOptions = {
         chartArea: { width: "50%" },
-        colors: ["#B8D8BA", "#EF959D", '#FCDDBC'],
+        colors: ["#033F63", "#FEDC97"],
         bars: "horizontal"
       };
 
     return (
         <>
+            <h2>Hello {name}, here's your performance so far...</h2>
           <Chart
             chartType="PieChart"
             data={pieData}
             options={pieOptions}
-            width={"100%"}
+            width={"80%"}
             height={"400px"}
         />
+        <h4>How many of our articles have you read?</h4>
         <Chart
             chartType="Bar"
-            width="90%"
+            width="80%"
             height="400px"
             data={barData}
             options={barOptions}
