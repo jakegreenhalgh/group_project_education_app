@@ -1,0 +1,19 @@
+.header-container {
+    position: relative;
+}
+
+.header-image>img{
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    height: 600px;
+}
+
+/* drop-shadow(offset-x offset-y blur-radius color) */
+.article-header{
+    font-family:'Staatliches', cursive;
+    font-size: x-large;
+    position: absolute;
+    top: 1em;
+    left: 5em;
+    filter: drop-shadow(2px 3px 2px white);
+}

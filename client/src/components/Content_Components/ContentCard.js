@@ -5,13 +5,16 @@ const ContentCard = ({ content }) => {
     // Would like to like topic images to topic cards here- new component name?- Discuss with group */
         return (
         <>
-            <div className='header-image'>
-            <img src={content.images[0].header}/>
-            </div>
+            <div className='header-container'>
+                <div className='header-image'>
+                <img src={content.images[0].header}/>
+                </div>
 
-            <div className='article-header'> 
-            <h2>{content.name}</h2>
+                <div className='article-header'> 
+                <h2>{content.name}</h2>
+                </div>
             </div>
+            
             
             <div className='article-body'>
             <p>{content.text}</p>
