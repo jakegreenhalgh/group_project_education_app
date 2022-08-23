@@ -2,7 +2,8 @@
 import {useState, useEffect}  from 'react';
 import {useLocation} from 'react-router-dom';
 import ContentCard from '../components/Content_Components/ContentCard';
-import QuizList from '../components/Content_Components/QuizList';
+import QuizList from '../components/quiz_components/QuizList';
+import QuizContainer from './QuizContainer';
 
 
 // think we will need to pass something down to this like the name of the content added ?
@@ -18,7 +19,7 @@ function ContentContainer() {
 
 
 
-    console.log(data);
+    // console.log(data);
 
 // on page load a category will be fetched by id and i think we match the name with a for loop and set it as state
     // useEffect(()=>{
@@ -28,7 +29,7 @@ function ContentContainer() {
     // setContent(location.state)
 
 
-console.log(content);
+// console.log(content);
 
 
 
@@ -43,7 +44,7 @@ if ( content.type === "article"){
 }
 else if (content.type === "quiz"){
     return(
-            <QuizList quiz={content}/>
+            <QuizContainer quiz={content}/>
         )
 }else{
     return( 

@@ -70,36 +70,33 @@ db.categories.insertMany(
                                                         "title": "Why does Jacob hate wind farms?",
                                                         "choices":
                                                             [   
-                                                            {"option1": "He prefers normal farms"},
-                                                            {"option2": "He's financed by Big Oil"},
-                                                            {"option3": "He saw too many wind farm images in his previous job"},
-                                                            {"option4": "He can't say, otherwise he's afraid he'd have to kill you"}
-                                                            ],
-                                                        "answer": {"option3": "He saw too many wind farm images in his previous job"}
+                                                            {"id": "option1", "text": "He prefers normal farms", "isCorrect": "false"},
+                                                            {"id": "option2", "text": "He's financed by Big Oil", "isCorrect": "false"},
+                                                            {"id": "option3", "text": "He saw too many wind farm images in his previous job", "isCorrect": "false"},
+                                                            {"id": "option4", "text": "He can't say, otherwise he's afraid he'd have to kill you", "isCorrect": "true"}
+                                                            ]
                                                         },
                                                         {
                                                             "number": "2",
                                                             "title": "Why does the UK Gov not invest more in renewables?",
                                                             "choices":
                                                                 [   
-                                                                {"option1": "Tories be crazy"},
-                                                                {"option2": "The Tories are extremely bad"},
-                                                                {"option3": "They're just having a short 12 year blip of ruining the country, they'll sort it soon. They promise"},
-                                                                {"option4": "They're all in the pocket of Big Oil and are also awful people. All other options are valid"}
-                                                                ],
-                                                            "answer": {"option4": "They're all in the pocket of Big Oil and are also awful people. All other options are valid"}
+                                                                {"id": "option1", "text": "Tories be crazy", "isCorrect": "false"},
+                                                                {"id": "option2", "text": "The Tories are extremely bad", "isCorrect": "false"},
+                                                                {"id": "option3", "text": "They're just having a short 12 year blip of ruining the country, they'll sort it soon. They promise", "isCorrect": "false"},
+                                                                {"id": "option4", "text": "They're all in the pocket of Big Oil and are also awful people. All other options are valid", "isCorrect": "true"}
+                                                                ]
                                                             },
                                                         {
                                                             "number": "3",
                                                             "title": "Generic Renewables Question",
                                                             "choices":
                                                                 [   
-                                                                {"option1": "Generic Renewables Answer 1"},
-                                                                {"option2": "Generic Renewables Answer 2"},
-                                                                {"option3": "Generic Renewables Answer 3"},
-                                                                {"option4": "Generic Renewables Answer 4"}
-                                                                ],
-                                                            "answer": {"option2": "Generic Renewables Answer 2"}
+                                                                {"id": "option1", "text": "Generic Renewables Answer 1", "isCorrect": "true"},
+                                                                {"id": "option2", "text": "Generic Renewables Answer 2", "isCorrect": "false"},
+                                                                {"id": "option3", "text": "Generic Renewables Answer 3", "isCorrect": "false"},
+                                                                {"id": "option4", "text": "Generic Renewables Answer 4", "isCorrect": "false"}
+                                                                ]
                                                             }
                                                     ]	
                                     }			
