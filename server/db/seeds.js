@@ -106,3 +106,29 @@ db.categories.insertMany(
         ] 
 
 )
+
+
+db.users.insertMany(
+    [
+        {
+            name: "andrew",
+            password: 123,
+            logged_in: "false"
+        },
+        {
+            name: "jacob",
+            password: 123,
+            logged_in: "false"
+        },
+        {
+            name: "jack",
+            password: 123,
+            logged_in: "false"
+        },
+        {
+            name: "carly",
+            password: 123,
+            logged_in: "false"
+        }
+    ]
+)
