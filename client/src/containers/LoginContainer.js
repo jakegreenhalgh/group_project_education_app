@@ -13,7 +13,6 @@ function LoginContainer() {
             username: "",
             password: "",
         })
-    const [activeUser, setActiveUser] = useState();
 
 
     const navigate = useNavigate();
@@ -37,20 +36,19 @@ function LoginContainer() {
 const onSubmit = (event) => {
     
         event.preventDefault();
+        let logged = false
         for (let index = 0; index < allUsers.length; index++) {
-            let user = allUsers[index]
+            const user = allUsers[index]
             if (user.username === formData.username.toLowerCase() && user.password == formData.password) {
-                setActiveUser(user)
                 loginActiveUser(user._id)
+                logged = true
                 navigate("../")
-        }}
-    if (!activeUser){
-        navigate("../loginerror")
+        }
+        if(!logged){
+            navigate("../loginerror")
+        }
     }
-    };
-        
-    
-    
+}
         return (
             <>
             <form onSubmit={onSubmit} id="login-form">
