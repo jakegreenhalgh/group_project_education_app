@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import TopicContainer from "../../containers/TopicContainer";
+import './category.css';
 // Import the nav bar 
 // Topic import/ route required? 
 
@@ -9,13 +10,21 @@ const CategoryCard = ({ category }) => {
 // Would like to like topic images to topic cards here- new component name?- Discuss with group */
     return (
     <>
-        <div className='Nav-bar'>
-            <Link to={`/categories/${category._id}`}> <h2>{category.category}</h2></Link>
+        <Link to={`/categories/${category._id}`}> 
+        
+        <div className='Nav-Bar'>
+        <h2>{category.category}</h2>    
         </div>
-        <div className='Category-Header-Image'>
+        </Link>
+        <div className='Category-Descriptor'>
             <p>{category.description}</p>
-            <img src={category.image}/>
         </div>
+        <Link to={`/categories/${category._id}`}> 
+        <div className='Cat-Image'>
+            <img src={category.image} width="1000" height="600"/>
+        </div>
+        </Link>
+        
         
     </>
     )};
