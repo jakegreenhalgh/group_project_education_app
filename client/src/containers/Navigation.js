@@ -10,6 +10,8 @@ import ContentContainer from "./ContentContainer";
 import LoginContainer from "./LoginContainer";
 import LoginError from "../components/login_components/LoginError";
 import RegisterContainer from "./RegisterContainer";
+import StatsContainer from "./StatsContainer";
+
 function NavgationContainer() {
 
 /* <Route exact path="/" element={<HomePage></HomePage>} /> */
@@ -29,7 +31,11 @@ return (
             <Route path="/categories/:categoryId" element={<TopicContainer />}/>
             <Route path="/register" element={<RegisterContainer/>}/>
             <Route path="/categories/:categoryId/:contentId" element={<ContentContainer/>}/>
+
             <Route path="/loginerror" element={<LoginError/>}/>
+
+            <Route path="/statistics/" element={<StatsContainer/>}/>
+
             <Route exact path="*"></Route>
         </ Routes>
 
