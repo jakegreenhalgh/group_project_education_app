@@ -20,7 +20,6 @@ function StatsContainer () {
       navigate("../login")
         } else {
     
-    let name = "PersonName"
 
     const pieData = [
         ["Quiz", "Total Questions"],
