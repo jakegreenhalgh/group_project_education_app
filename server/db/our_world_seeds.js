@@ -68,9 +68,9 @@ db.categories.insertMany(
                         "_id": ObjectId(),
                         "type": "facts",
                         "name": "Deforestation and the Amazon Rainforest",
-                        "url":
+                        "url": "https://www.amazonconservation.org/the-challenge/threats/",
                         // "image": INSERT
-                        "text":,
+                        "text": "The Amazon Rainforest has a tipping point at which it is no longer able to sustain itself and the life within it. This tipping point is thought to be 20%, and deforestation is already at 17%. If 20% is reached, the Amazon will turn into a dried out grassland",
                     }
                 ]
 
