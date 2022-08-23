@@ -13,4 +13,6 @@
     filter: drop-shadow(2px 4px 6px black);
   }
 
-  /* Get a working on hover filter. Should be sepia on load, colour on hover. */
+  .Cat-Image>img:hover{
+    filter:sepia();
+  }
