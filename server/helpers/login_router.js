@@ -31,7 +31,7 @@ const loginRouter = function (collection) {
       });
 
 // updates every user to logged out 
-        router.put('/', (req, res) => {
+        router.put('/out', (req, res) => {
             collection
             .updateMany({}, {$set: {logged_in: "false"}})
             .then(result => {

@@ -111,24 +111,24 @@ db.categories.insertMany(
 db.users.insertMany(
     [
         {
-            name: "andrew",
-            password: 123,
-            logged_in: "false"
+            "username": "andrew",
+            "password": 123,
+            "logged_in": "false"
         },
         {
-            name: "jacob",
-            password: 123,
-            logged_in: "false"
+            "username": "jacob",
+            "password": 123,
+            "logged_in": "false"
         },
         {
-            name: "jack",
-            password: 123,
-            logged_in: "false"
+            "username": "jack",
+            "password": 123,
+            "logged_in": "false"
         },
         {
-            name: "carly",
-            password: 123,
-            logged_in: "false"
+            "username": "carly",
+            "password": 123,
+            "logged_in": "false"
         }
     ]
 )

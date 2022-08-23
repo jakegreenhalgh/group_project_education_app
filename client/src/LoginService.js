@@ -10,7 +10,8 @@ export const getUsers = () => {
 
 // sets all users logged_in state to false
 export const logoutUsers = () => {
-    return fetch(baseURL ,{    method: 'POST',
+    return fetch(baseURL + "out",
+    {method: 'PUT',
     headers: { 'Content-Type': 'application/json' }})
     .then(res => res.json())
 }
@@ -18,14 +19,14 @@ export const logoutUsers = () => {
 
 // logs in user sets one users logged in to true 
 export const loginActiveUser = (id) => {
-    return fetch(baseURL  + id,{    method: 'POST',
+    return fetch(baseURL  + id,    {method: 'PUT',
     headers: { 'Content-Type': 'application/json' }})
     .then(res => res.json())
 }
 
 
 export const findActiveUser = () => {
-    return featch(baseURL + 'true')
+    return fetch(baseURL + 'true')
     .then(res => res.json())
 }
 

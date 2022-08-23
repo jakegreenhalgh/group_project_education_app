@@ -7,6 +7,8 @@ import NavBar from "../components/NavBar";
 import HomePage from "../HomePage";
 import TopicContainer from "./TopicContainer";
 import ContentContainer from "./ContentContainer";
+import LoginContainer from "./LoginContainer";
+import LoginError from "../components/login_components/LoginError";
 function NavgationContainer() {
 
 /* <Route exact path="/" element={<HomePage></HomePage>} /> */
@@ -21,9 +23,11 @@ return (
 
         <Routes>
             <Route exact path="/" element={< HomePage/>} />
+            <Route exact path="/login" element={<LoginContainer/>}/>
             <Route exact path="/categories" element={< CategoryContainer/>} />
             <Route path="/categories/:categoryId" element={<TopicContainer />}/>
             <Route path="/categories/:categoryId/:contentId" element={<ContentContainer/>}/>
+            <Route path="/loginerror" element={<LoginError/>}/>
             <Route exact path="*"></Route>
         </ Routes>
 
