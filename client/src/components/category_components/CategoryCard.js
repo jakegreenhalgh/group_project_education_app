@@ -13,8 +13,8 @@ const CategoryCard = ({ category }) => {
             <Link to={`/categories/${category._id}`}> <h2>{category.category}</h2></Link>
         </div>
         <div className='Category-Header-Image'>
-            <img src={category.image}/>
             <p>{category.description}</p>
+            <img src={category.image}/>
         </div>
         
     </>
