@@ -10,7 +10,7 @@ function QuizContainer({quiz}) {
     const [score, setScore] = useState(0);
     const [questionsAttempted, setQuestionsAttempted] = useState(0);
     const [showResults, setShowResults] = useState(false);
-    const [activeUser, setActiveUser] = useState();
+    const [activeUser, setActiveUser] = useState(false);
 
     useEffect(() => {
         findActiveUser().then((result => { setActiveUser(result)} ))

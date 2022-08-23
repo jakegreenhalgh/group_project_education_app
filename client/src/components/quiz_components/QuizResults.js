@@ -4,7 +4,6 @@ import { findActiveUser, saveUserQuizData } from '../../LoginService'
 function QuizResults({score, quiz, user}) {
 
  
-console.log(user)
 
 const updateUser = () => {
 
@@ -18,7 +17,6 @@ const updateUser = () => {
     }
     if (quizFound === false) {
       user.saved_quiz.push(newQuizData)
-      console.log(user)
       saveUserQuizData(user._id, user.saved_quiz)
     }
     else{
@@ -45,8 +43,9 @@ const updateUser = () => {
 
 
 
+if(user){
   updateUser()
-
+}
 
 //   const handleUpdate = () => {
 //     if(!user){
