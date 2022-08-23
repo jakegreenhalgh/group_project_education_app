@@ -18,7 +18,7 @@ MongoClient.connect(databaseURL, { useUnifiedTopology: true })
     const categoriesCollection = db.collection('categories');
     const categoriesRouter = createRouter(categoriesCollection);
     const ourWorldCollection = db.collection('ourWorld');
-    const ourWorldRouter = ourWorldRouter(ourWorldCollection);
+    const ourWorldRouter = worldRouter(ourWorldCollection);
     app.use('/api/categories', categoriesRouter);
     app.use('api/ourWorld', ourWorldRouter);
 
