@@ -1,43 +1,66 @@
-import React, {useState, useEffect, useReducer} from 'react'
-import { findActiveUser, saveUserData } from '../../LoginService'
+import React, {useState, useEffect} from 'react'
+import { findActiveUser, saveUserQuizData } from '../../LoginService'
 
+function QuizResults({score, quiz, user}) {
 
-function QuizResults({score, quiz}) {
+ 
+console.log(user)
 
-  const [activeUser, setActiveUser] = useState();
-  const [quizData, setQuizData] = useState({
-    "id": quiz._id,
-    "name": quiz.name,
-    "score": score
-  })
+const updateUser = () => {
 
-
-  useEffect(() => {
-    findActiveUser().then((result => { setActiveUser(result)} ))
-  }, [])
-  
-// console.log(activeUser)
-
-  if(activeUser){
-    let user = activeUser
-    let compareArray = activeUser.saved_quiz.map(quiz => quiz.id)
-    let isQuizSaved = compareArray.includes(quizData.id)
-    if (isQuizSaved === false){
-      user.saved_quiz.push(quizData)
-      // setActiveUser(user)
-      // console.log(activeUser)
-    
-    } else{
-      let index = user.saved_quiz.findIndex(quiz =>  quiz.id === quizData.id);
-      console.log(index)
+  if(user.saved_quiz.length !== 0){
+    let compareArray = user.saved_quiz.map(quiz => quiz._id)
+    let quizFound = compareArray.includes(quiz.id)
+    let newQuizData = {
+      id: quiz._id,
+      name: quiz.name,
+      score: score
     }
+    if (quizFound === false) {
+      user.saved_quiz.push(newQuizData)
+      console.log(user)
+      saveUserQuizData(user._id, user.saved_quiz)
     }
-    
+    else{
+      for (let index = 0; index < user.saved_quiz.length; index++) {
+        let currentId = user.saved_quiz[index]
+        if(currentId.id === quiz._id)
+          currentId.score = score
+      }
+      
+      saveUserQuizData(user._id, user.saved_quiz)
+    }
 
+  }else{
+    let QuizData = {
+      id: quiz._id,
+      name: quiz.name,
+      score: score
+    }
+    user.saved_quiz.push(QuizData)
+    saveUserQuizData(user._id, user.saved_quiz)
+  }
+}
+
+
+
+
+  updateUser()
+
+
+//   const handleUpdate = () => {
+//     if(!user){
+//     booking.checked_in = "true";
+//     updateCheckedIn(booking._id)
+//     updateBookings(booking._id, booking)
+//     }
+//     else{
+//         booking.checked_in = "false";
+//         updateCheckedIn(booking._id)
+//         updateBookings(booking._id, booking)
+//     }
+// }
   
-
-
-
 
 
 
@@ -46,7 +69,6 @@ function QuizResults({score, quiz}) {
     <h2>Results</h2>
     <h3>Final Score: {score} / {quiz.questions.length}</h3>
     <h5>Well done, you got {(score / quiz.questions.length) * 100}% ! </h5>
-
     <p>SHARE RESULTS??</p>
     </>
   )

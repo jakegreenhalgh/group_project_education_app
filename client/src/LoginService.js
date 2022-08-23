@@ -1,4 +1,5 @@
 const baseURL = 'http://localhost:9000/api/users/'
+const saveUrl = 'http://localhost:9000/api/users/save/'
 
 
 // gets all users
@@ -30,14 +31,23 @@ export const findActiveUser = () => {
     .then(res => res.json())
 }
 
-export const saveUserData = (id) => {
-    return fetch(baseURL + 'save/' + id,
+export const saveUserQuizData = (id, payload) => {
+    return fetch(saveUrl + "saved_quiz/" + id,
     {method: 'PUT',
+    body: JSON.stringify(payload),
     headers: { 'Content-Type': 'application/json' }})
     .then(res => res.json())
     
 }
 
+export const saveUserFavData = (id, payload) => {
+    return fetch(saveUrl + "favrioutes/" + id,
+    {method: 'PUT',
+    body: JSON.stringify(payload),
+    headers: { 'Content-Type': 'application/json' }})
+    .then(res => res.json())
+    
+}
 
 export const postUser = (payload) => {
     return fetch(baseURL, {

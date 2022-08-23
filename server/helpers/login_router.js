@@ -75,19 +75,32 @@ const loginRouter = function (collection) {
       });
 
 // save new content to a user maybe who knows anymore
-      router.put('/save/:id', (req, res) => {
-        const id = req.params.id;
-        const newItem = req.body
-        collection
-        .updateOne({ _id: ObjectID(userId)}, { $set: {newItem}  })
-        .then(result => {
-          res.json(result);
-        })
-        .catch((err) => {
-          res.status(500);
-          res.json({ status: 500, error: err });
-        });
-      });
+
+router.put('/save/saved_quiz/:id', (req, res) => {
+  const id = req.params.id;
+  collection
+  .updateMany({ _id: ObjectID(id)}, { $set: { saved_quiz: req.body}})
+  .then(result => {
+    res.json(result);
+  })
+  .catch((err) => {
+    res.status(500);
+    res.json({ status: 500, error: err });
+  });
+});
+
+router.put('/save/favrioutes/:id', (req, res) => {
+  const id = req.params.id;
+  collection
+  .updateMany({ _id: ObjectID(id)}, { $set: { favrioutes: req.body}})
+  .then(result => {
+    res.json(result);
+  })
+  .catch((err) => {
+    res.status(500);
+    res.json({ status: 500, error: err });
+  });
+});
 
 router.post("/", (req, res) => {
   const newItem = req.body;
