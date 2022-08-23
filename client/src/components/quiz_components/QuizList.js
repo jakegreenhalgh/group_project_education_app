@@ -1,7 +1,9 @@
 import React from 'react'
 import QuizCard from './QuizCard'
 
-const QuizList = ({quiz, handleClick}) => {
+function QuizList({quiz, handleClick}) {
+
+    // Maps out quiz questions
 
     const questionsArray = quiz.questions.map((question) => {
         return (

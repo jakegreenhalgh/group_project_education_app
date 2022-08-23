@@ -1,21 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
-const QuizCard = ({number, question, choices, handleClick}) => {
+function QuizCard ({number, question, choices, handleClick}) {
 
-    // const clicked = (selectedChoice) => {
-    //     let hasBeenClicked = 0
-    //     if(hasBeenClicked < 1){
-    //         handleClick(selectedChoice)
-    //         hasBeenClicked += 1
-    //     }
-    // }
-
-
-
-    // allows only one click per question. Not sure if it's the most elegant solution.
-
+    // State allows only one click for each question with an if statement 'gate'. Not sure if it's the most elegant solution.
     const [hasBeenClicked, setHasBeenClicked] = useState(false)
 
+    // Allows passing of answer back up to QuizContainer via handleClick IF hasBeenClicked is not true.
     const clicked = (selectedChoice) => {
         if(!hasBeenClicked){
             handleClick(selectedChoice)
@@ -23,7 +13,7 @@ const QuizCard = ({number, question, choices, handleClick}) => {
         }        
     }
 
-
+    //  Maps out each question choice
     const choicesArray = choices.map((choice) => {
         return(
         <p key={choice.id} onClick={() => clicked(choice.isCorrect)}>{choice.text}</p>
@@ -40,3 +30,15 @@ const QuizCard = ({number, question, choices, handleClick}) => {
 }
 
 export default QuizCard
+
+
+
+//*  Previous idea for one-click gate
+
+    // const clicked = (selectedChoice) => {
+    //     let hasBeenClicked = 0
+    //     if(hasBeenClicked < 1){
+    //         handleClick(selectedChoice)
+    //         hasBeenClicked += 1
+    //     }
+    // }
