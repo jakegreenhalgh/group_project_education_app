@@ -11,9 +11,16 @@
 /* drop-shadow(offset-x offset-y blur-radius color) */
 .article-header{
     font-family:'Staatliches', cursive;
-    font-size: x-large;
+    font-size: 3rem;
     position: absolute;
-    top: 1em;
-    left: 5em;
+    top: 1rem;
+    left: 5rem;
     filter: drop-shadow(2px 3px 2px white);
+}
+
+/* Placeholder font- it needs to be bolder */
+.article-body{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 2rem;
+    font-style: bold;
 }
