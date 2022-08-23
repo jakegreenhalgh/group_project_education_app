@@ -1,7 +1,5 @@
-use website;
-db.dropDatabase();
 
-db.categories.insertMany(
+db.ourWorld.insertMany(
         [
             {   "category": "Endangered Species",
                 "image": "https://images.unsplash.com/photo-1535338454770-8be927b5a00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80",
@@ -11,6 +9,10 @@ db.categories.insertMany(
                                     "_id": ObjectId(),
                                     "type": "facts" ,
                                     "name": "The Snow Leopard",
+                                    "estimated_number_2000": 10000,
+                                    "estimated_number_2005": 8000, 
+                                    "estimated_number_2015": 6590, 
+                                    "estimated_number_2022": 4080, 
                                     "url": "https://www.wwf.org.uk/learn/wildlife/snow-leopards",
                                     "image": "https://images.unsplash.com/photo-1639841377321-b54eab2c8430?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c25vdyUyMGxlb3BhcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
                                     "text": "Snow leopards are so endangered that it's incredibly difficult to find free images of them on unsplash",
@@ -19,10 +21,14 @@ db.categories.insertMany(
                                     "_id": ObjectId(),
                                     "type": "facts" ,
                                     "name": "The Sunda Island Tiger",
+                                    "estimated_number_2000": 1000,
+                                    "estimated_number_2005": 800,
+                                    "estimated_number_2015": 500,
+                                    "estimated_number_2022": 400,
                                     "url": "https://www.worldwildlife.org/species/sunda-tiger",
                                     "image":"https://images.unsplash.com/photo-1501705388883-4ed8a543392c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3VuZGElMjBpc2xhbmQlMjB0aWdlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
                                     "text": "This isn't a picture of the Sunda Island Tiger, it's just a normal one. The Sunda Island tiger is so endangered there are only 400 left in the world (estimated)",
-                                }
+                                },
                               ]
             },
             {   "category": "Rising Sea Levels",
