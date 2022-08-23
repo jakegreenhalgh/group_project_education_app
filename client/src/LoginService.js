@@ -30,6 +30,15 @@ export const findActiveUser = () => {
     .then(res => res.json())
 }
 
+export const saveUserData = (id) => {
+    return fetch(baseURL + 'save/' + id,
+    {method: 'PUT',
+    headers: { 'Content-Type': 'application/json' }})
+    .then(res => res.json())
+    
+}
+
+
 export const postUser = (payload) => {
     return fetch(baseURL, {
         method: 'POST',
