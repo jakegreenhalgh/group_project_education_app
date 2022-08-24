@@ -2,28 +2,65 @@ import { Chart } from "react-google-charts";
 import {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom"
 import {findActiveUser} from '../LoginService'
-import { Paper } from "@mui/material";
-import { Box } from "@mui/material";
+import { getCategories } from "../WebsiteService";
+import FavouritesList from "../components/favourites_components/FavourtiesList";
 function StatsContainer () {
 
   const [user, setUser] = useState()
+  const [categories, setCategories] = useState(false)
 
   const navigate = useNavigate();
 
   useEffect(() => {
-      findActiveUser().then((result => { setUser(result)} ))  
+      findActiveUser().then((result => { setUser(result)} ))
+      getCategories().then((result) => {setCategories(result)} )  
   }, [])
-
 
     if(!user){
       navigate("../login")
         } else {
 
+    const total_correct = () => {
+      let total = 0
+      for (let quiz of user.saved_quiz) {
+        total += quiz.score
+      }
+      return total
+    }
+
+    const total_incorrect = () => {
+      let total = 0
+      for (let quiz of user.saved_quiz) {
+        total += quiz.incorrect
+      }
+      return total
+    }
+
+    const total_read = user.read.length
+
+    const total_articles = () => {
+      if (categories) {
+      let total = 0
+      for (let index = 0; index < categories.length; index++) {
+        const category = categories[index];
+        for (let index = 0; index < category.content.length; index++) {
+          const content = category.content[index];
+          if (content.type === 'article') {
+            total +=1
+          }
+      
+    }
+      }
+      return total
+    }
+    }
+    const total_unread = total_articles() - total_read
+    
+
     const pieData = [
         ["Quiz", "Total Questions"],
-        ["Answered correctly", 11],
-        ["Answered incorrectly", 2],
-        ["Not yet attempted", 2]
+        ["Answered correctly", total_correct()],
+        ["Answered incorrectly", total_incorrect()]
       ];
       
     const pieOptions = {
@@ -33,7 +70,7 @@ function StatsContainer () {
       
     const barData = [
         ["Hello", "Articles you've read", "Articles you've still to read"],
-        ["Score", 12, 4],
+        ["Score", total_read, total_unread],
       ];
       
     const barOptions = {
@@ -45,24 +82,6 @@ function StatsContainer () {
     return (
       <>
       <h2>Hello {user.username}, here's your performance so far...</h2>
-
-      <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        '& > :not(style)': {
-          m: 1,
-          width: 400,
-          height: 400,
-        },
-      }}
-    >
-      <Paper elevation={0}></Paper>
-      <Paper />
-      <Paper elevation={3} />
-    </Box>
-  
-         <Paper variant="outlined" square elevation={20}>
             <Chart
               chartType="PieChart"
               data={pieData}
@@ -70,8 +89,6 @@ function StatsContainer () {
               width={"80%"}
               height={"400px"}
               />
-        </Paper>
-         <Paper variant="outlined"  elevation={3}>
         <h4>How many of our articles have you read?</h4>
           <Chart
               chartType="Bar"
@@ -80,7 +97,8 @@ function StatsContainer () {
               data={barData}
               options={barOptions}
               />
-        </Paper>
+        <h4>Your favourite articles</h4>
+        <FavouritesList favourites={user.favourites} key={user.id}/>
         </>
     )}
     }
