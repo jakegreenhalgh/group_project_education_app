@@ -13,6 +13,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 
 
@@ -27,7 +28,7 @@ return(
             <div className="landing-text">
                   <h1>Learn why it needs protecting.</h1>
                   <h1>&nbsp;</h1>
-                  <h1>&nbsp;</h1>
+                  <KeyboardDoubleArrowDownIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} fontSize='large' />
                   <h1>&nbsp;</h1>
                   <h1>&nbsp;</h1>
                   <h1>&nbsp;</h1>
@@ -36,20 +37,15 @@ return(
 
 
  </div>
- {/* <div className="landing-section">
-            <img className="media" src="https://images.unsplash.com/photo-1563994798145-aac79dece602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80"/>
-            <div className="landing-text">
-                  <h1>Learn why it needs protecting.</h1>
-            </div>
- </div> */}
 
+ {/* <div className="explainer-text">
+      <h3>'The Environment'...can kind of feel a little complicated to understand, right? We know it's important, but sometimes it can be hard to pinpoint why. OurWorld gives you useful information and lessons to help you understand the what, whens, wheres, hows and whys of climate blah blah blah blah</h3>
+</div>  */}
 
+<div className="landing-cards">
 
-{/* OURSTATS / LESSONS CARDS */}
-
-<div className="box1">
-
-      <div>
+      <div className="individual-cards">
+            <a href={'/'}>
 
             <Card 
                   elevation={24} 
@@ -69,15 +65,19 @@ return(
 
             </Card>
 
+      </a>
     </div>
 
-    <div>
+    <div className="individual-cards">
+       <a href={'/categories'}>
 
             <Card 
-                  elevation={24}
+                  
+                  elevation={24} 
                   sx={{ maxWidth: 400,
                               '&:hover': {
-                        opacity: [0.9, 0.8, 0.7],}}}>
+                        opacity: [0.9, 0.8, 0.7],
+                        }}}>
                               <CardMedia
                               component="img"
                               height="300"
@@ -89,6 +89,7 @@ return(
                               </CardContent>
 
             </Card>
+      </a>
     </div>
 
 </div>

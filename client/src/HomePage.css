@@ -35,14 +35,32 @@
 
   }
 
+a {
+    text-decoration: none;
+   }
 
-  .box1 {
+  .landing-cards {
     padding: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
+
+
+  .individual-cards {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.individual-cards:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+  
 
   /* * Version 2 */
 
