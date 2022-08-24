@@ -5,11 +5,12 @@
   }
 
 .Topic-Header-Image>img{
-  width: 170px;
-  height: 200px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 300px;
+  height: 300px;
   transition: 0.3s;
-}
+  justify-content: center;
+  padding-left: 90%;
+} 
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
