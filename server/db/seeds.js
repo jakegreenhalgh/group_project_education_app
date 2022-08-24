@@ -115,28 +115,32 @@ db.users.insertMany(
             "password": 123,
             "logged_in": "false",
             "saved_quiz":[],
-            "favourites":[]
+            "favourites":[],
+            "read":[]
         },
         {
             "username": "jacob",
             "password": 123,
             "logged_in": "false",
             "saved_quiz":[],
-            "favourites":[]
+            "favourites":[],
+            "read":[]
         },
         {
             "username": "jack",
             "password": 123,
             "logged_in": "false",
             "saved_quiz":[],
-            "favourites":[]
+            "favourites":[],
+            "read":[]
         },
         {
             "username": "carly",
             "password": 123,
             "logged_in": "false",
             "saved_quiz":[],
-            "favourites":[]
+            "favourites":[],
+            "read":[]
         }
     ]
 )
