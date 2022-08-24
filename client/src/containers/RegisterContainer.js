@@ -27,7 +27,7 @@ function RegisterContainer() {
             newFormData.saved_quiz  = []
             newFormData.favourites = []
             newFormData.read = []
-            
+            newFormData.logged_in = "false"
             
             setFormData(newFormData)
         }
