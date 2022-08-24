@@ -4,6 +4,9 @@ import {useNavigate} from "react-router-dom"
 import {findActiveUser} from '../LoginService'
 import { getCategories } from "../WebsiteService";
 import FavouritesList from "../components/favourites_components/FavourtiesList";
+
+import './StatsContainer.css'
+
 function StatsContainer () {
 
   const [user, setUser] = useState()
@@ -64,41 +67,65 @@ function StatsContainer () {
       ];
       
     const pieOptions = {
-        title: "How have you scored in the quizzes?",
         colors:['#B8D8BA','#EF959D', '#FCDDBC'],
       };
       
     const barData = [
-        ["Hello", "Articles you've read", "Articles you've still to read"],
-        ["Score", total_read, total_unread],
+        [" ", "Articles you've read", "Articles you've still to read"],
+        [" ", total_read, total_unread],
       ];
       
     const barOptions = {
-        chartArea: { width: "50%" },
+        // chartArea: { width: "80%" },
         colors: ["#033F63", "#FEDC97"],
-        bars: "horizontal"
+        bars: "horizontal",
+
       };
 
     return (
       <>
-      <h2>Hello {user.username}, here's your performance so far...</h2>
-            <Chart
-              chartType="PieChart"
-              data={pieData}
-              options={pieOptions}
-              width={"80%"}
-              height={"400px"}
-              />
-        <h4>How many of our articles have you read?</h4>
-          <Chart
-              chartType="Bar"
-              width="80%"
-              height="400px"
-              data={barData}
-              options={barOptions}
-              />
-        <h4>Your favourite articles</h4>
-        <FavouritesList favourites={user.favourites} key={user.id}/>
+    
+    <h1 className="profile-title">Hi {user.username},</h1> 
+    <h2 className="profile-sub">here's your performance so far...</h2>
+
+      <div className="stats-box-main">
+
+
+            <div className="stats-box-sub">
+
+                <div className="chart1">
+                  <h4>Your Quiz Scores:</h4>
+                    <Chart
+                      chartType="PieChart"
+                      data={pieData}
+                      options={pieOptions}
+                      width="50%"
+                      height="50%"
+                      />
+                </div>
+
+                <div className="chart2">
+
+                    <h4>Articles You've Read:</h4>
+                    <Chart
+                      chartType="Bar"
+                      data={barData}
+                      options={barOptions}
+                      width="50%%"
+                      height="80%"
+                      />
+                </div>
+
+
+             </div>
+
+          <div className="fave-list">
+            <h4>Your favourite articles</h4>
+            <FavouritesList favourites={user.favourites} key={user.id}/>
+
+          </div>
+
+        </div>
         </>
     )}
     }

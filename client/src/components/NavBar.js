@@ -188,7 +188,7 @@ const NewAppBar = () => {
                   <Typography textAlign="center">Log In</Typography>
                 </MenuItem>
                 <MenuItem component={Link} to="/statistics" onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">Account</Typography>
+                  <Typography textAlign="center">Profile</Typography>
                 </MenuItem>
                 <MenuItem component={Link} to="/login" onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">Log Out</Typography>
