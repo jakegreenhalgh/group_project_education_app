@@ -47,43 +47,51 @@ return(
 
 {/* OURSTATS / LESSONS CARDS */}
 
-<Grid container item spacing={6}>
+<div className="box1">
 
-    <Card sx={{ maxWidth: 400,
-                  '&:hover': {
-            opacity: [0.9, 0.8, 0.7],}}}>
-                  <CardMedia
-                  component="img"
-                  height="300"
-                  image="https://images.unsplash.com/photo-1502637098811-fa9526d2b659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"/>
-                  <CardContent>
-                  <Typography  variant="h5" component="div">
-                  OurStats        
-                  </Typography>
-                  </CardContent>
-                  <CardActions>
-                  <Button size="small">Learn More</Button>
-                  </CardActions>
-    </Card>;
+      <div>
 
-    <Card sx={{ maxWidth: 400,
-                  '&:hover': {
-            opacity: [0.9, 0.8, 0.7],}}}>
-                  <CardMedia
-                  component="img"
-                  height="300"
-                  image="https://images.unsplash.com/photo-1581242163695-19d0acfd486f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"/>
-                  <CardContent>
-                  <Typography  variant="h5" component="div">
-                  Lessons       
-                  </Typography>
-                  </CardContent>
-                  <CardActions>
-                  <Button size="small">Learn More</Button>
-                  </CardActions>
-    </Card>;
+            <Card 
+                  elevation={24} 
+                  sx={{ maxWidth: 400,
+                              '&:hover': {
+                        opacity: [0.9, 0.8, 0.7],
+                        }}}>
+                              <CardMedia
+                              component="img"
+                              height="300"
+                              image="https://images.unsplash.com/photo-1502637098811-fa9526d2b659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"/>
+                              <CardContent>
+                              <Typography  variant="h5" component="div">
+                              OurStats        
+                              </Typography>
+                              </CardContent>
 
-</Grid>
+            </Card>
+
+    </div>
+
+    <div>
+
+            <Card 
+                  elevation={24}
+                  sx={{ maxWidth: 400,
+                              '&:hover': {
+                        opacity: [0.9, 0.8, 0.7],}}}>
+                              <CardMedia
+                              component="img"
+                              height="300"
+                              image="https://images.unsplash.com/photo-1581242163695-19d0acfd486f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"/>
+                              <CardContent>
+                              <Typography  variant="h5" component="div">
+                              Lessons       
+                              </Typography>
+                              </CardContent>
+
+            </Card>
+    </div>
+
+</div>
 
 </>
 )

@@ -1,7 +1,9 @@
 
 
   /* *Version 3 */
-
+  * {
+    font-family:'Staatliches', cursive;
+  }
 
   .landing-section {
     position: relative;
@@ -34,9 +36,11 @@
   }
 
 
-  .cards {
-    flex-direction: column;
-    justify-content: center;
+  .box1 {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
   }
 

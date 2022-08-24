@@ -68,7 +68,7 @@ const NewAppBar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Arial',
+              fontFamily: 'Staatliches',
               fontWeight: 800,
               fontSize: 60,
               letterSpacing: '.1rem',
