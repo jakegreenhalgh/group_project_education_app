@@ -1,16 +1,20 @@
+
 .Nav-Bar{
     font-family: 'Staatliches', cursive;
     font-size:xx-large;
+    padding-left: 5%;
   }
   
   .Category-Descriptor{
     font-family:'Staatliches', cursive;
     font-size: larger;
     text-decoration: none; 
+    padding-left: 5%;
 }
 
   .Cat-Image>img {
     filter: drop-shadow(2px 4px 6px black);
+    padding-left: 5%;
   }
 
   .Cat-Image>img:hover{

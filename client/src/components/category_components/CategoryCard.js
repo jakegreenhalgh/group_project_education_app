@@ -21,7 +21,7 @@ const CategoryCard = ({ category }) => {
         </div>
         <Link to={`/categories/${category._id}`}> 
         <div className='Cat-Image'>
-            <img src={category.image} width="1000" height="600"/>
+            <img src={category.image} width="1300" height="800"/>
         </div>
         </Link>
         
