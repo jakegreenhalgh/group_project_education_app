@@ -145,7 +145,7 @@ const NewAppBar = () => {
           {/* Below renders menu buttons  ---------------------------------------------------------- */}
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <Button component={Link} to="/" sx={{ my: 2, color: 'white', display: 'block' }}>
+              <Button component={Link} to="/ourstats" sx={{ my: 2, color: 'white', display: 'block' }}>
                   OurStats
               </Button>
               <Button component={Link} to="/categories" sx={{ my: 2, color: 'white', display: 'block' }}>
