@@ -50,7 +50,7 @@ return(
 <div className="landing-cards">
 
       <div className="individual-cards">
-            <a href={'/'}>
+            <a href={'/ourstats'}>
 
             <Card 
                   elevation={24} 

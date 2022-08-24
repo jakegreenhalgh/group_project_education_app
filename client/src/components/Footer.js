@@ -3,17 +3,30 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="main-footer">
-      <div className="container">
-        <hr />
-        <div className="row">
-          <p className="col-sm">
-            &copy;{new Date().getFullYear()} || Made with Love by C.A.J.J || Terms Of Service | 
-          </p>
-        </div>
-      </div>
+    <>
+    <div className="site-footer" >
+        <p> GitHub Repo </p>
+        <p> Made with Love by C.A.J.J </p>
+        
+        <p> Created &copy;{new Date().getFullYear()} </p>
     </div>
+    </>
   );
 }
 
 export default Footer;
+
+// * ALT
+
+{/* <>
+<hr/>
+<div className="site-footer" >
+  <p>Terms Of Service</p>
+  <p> Reserved &copy;{new Date().getFullYear()} </p>
+    <p>Made with Love by C.A.J.J </p>
+    <p>GitHub Repo</p>
+  <p>Contact</p>
+
+
+</div>
+</> */}
