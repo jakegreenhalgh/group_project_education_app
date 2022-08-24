@@ -44,7 +44,7 @@ function RegisterContainer() {
                     postUser(formData)
                     navigate("../login")
         }else{
-            navigate("../loginerror")
+            navigate("../registererror")
         }
     }
 

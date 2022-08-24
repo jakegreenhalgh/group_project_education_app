@@ -11,8 +11,10 @@ import LoginContainer from "./LoginContainer";
 import LoginError from "../components/login_components/LoginError";
 import RegisterContainer from "./RegisterContainer";
 import StatsContainer from "./StatsContainer";
+import RegisterError from "../components/login_components/RegisterError";
 
 import AppNav from "../components/NavBar";
+
 
 
 function NavgationContainer() {
@@ -39,6 +41,7 @@ return (
             <Route path="/categories/:categoryId/:contentId" element={<ContentContainer/>}/>
 
             <Route path="/loginerror" element={<LoginError/>}/>
+            <Route path="/registererror" element={<RegisterError/>}/>
 
             <Route path="/statistics/" element={<StatsContainer/>}/>
 
