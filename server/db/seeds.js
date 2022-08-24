@@ -27,7 +27,7 @@ db.categories.insertMany(
                                             "name": "Example Article Number Two",
                                             "url": "https://www.google.co.uk/",
                                             "images": [
-                                                        {"header": "https://images.unsplash.com/photo-1633854678155-7c0756840d27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"},
+                                                        {"header": "https://images.unsplash.com/photo-1634822156819-9686a6569f95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2387&q=80"},
                                                         {"body1": "https://images.unsplash.com/photo-1587894736501-4e0131bf60b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1464&q=80"} 
                                                         ],
                                             "text": "Example Content Number Two. Example Content Number Two.  Example Content Number Two. Example Content Number Two. Example Content Number Two. Example Content Number Two."		
@@ -54,7 +54,7 @@ db.categories.insertMany(
                                             "name": "Scotlands Wildflower meadows",
                                             "url": "https://www.google.co.uk/",
                                             "images": [
-                                                {"header": "https://images.unsplash.com/photo-1560260240-c6ef90a163a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGlkYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"},
+                                                {"header": "https://images.unsplash.com/photo-1562772807-0adcd8c7b910?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"},
                                                 {"body1": "https://images.unsplash.com/photo-1505990482843-ba05d52c02c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80"} 
                                                 ],
                                                 "text": "Instead of plain cut grass on verges and public places, Historic Environment Scotland and many other organisations have made the descision to plant wildflowers on grassland.",
@@ -94,7 +94,7 @@ db.categories.insertMany(
                                         "name": "Wave energy is renewable",
                                         "url": "https://www.wwf.org.uk/updates/increased-offshore-wind-ambition-2030",
                                         "images": [
-                                                    {"header": "https://images.unsplash.com/photo-1544250726-cf5d75ffc212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1515&q=80"},
+                                                    {"header": "https://images.unsplash.com/photo-1522643062452-f5b403123bdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdhdmUlMjBwb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"},
                                                     {"body1": "https://images.unsplash.com/photo-1514911215070-20b41057e8ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2F2ZSUyMHBvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"} 
                                                     ],
                                         "text": "Tidal energy is power produced by the surge of ocean waters during the rise and fall of tides.",
