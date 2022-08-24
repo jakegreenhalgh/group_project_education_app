@@ -105,6 +105,18 @@ router.put('/save/favourites/:id', (req, res) => {
     res.json({ status: 500, error: err });
   });
 });
+router.put('/save/read/:id', (req, res) => {
+  const id = req.params.id;
+  collection
+  .updateMany({ _id: ObjectID(id)}, { $set: { read: req.body}})
+  .then(result => {
+    res.json(result);
+  })
+  .catch((err) => {
+    res.status(500);
+    res.json({ status: 500, error: err });
+  });
+});
 
 router.post("/", (req, res) => {
   const newItem = req.body;
