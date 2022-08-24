@@ -1,8 +1,8 @@
-.results {
-    padding-top: 50px;
+.quiz-results {
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 30%;
+    max-width: 35%;
 }

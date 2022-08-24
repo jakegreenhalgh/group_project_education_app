@@ -24,20 +24,22 @@ import PublicIcon from '@mui/icons-material/Public';
 const NewAppBar = () => {
 
 
-  const [anchorElNav, setAnchorElNav] = useState(null);
+// * state and functions for collapsing the menu to burger
+
+  // const [anchorElNav, setAnchorElNav] = useState(null);
   
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
 
   
   
   
-  // State for determining the formatting of the top menu bar????
+  // State for determining the formatting of the top menu bar?
   const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenUserMenu = (event) => {
@@ -206,50 +208,5 @@ const NewAppBar = () => {
   );
 };
 export default NewAppBar;
-
-
-
-// * PREVIOUS VERSION
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import AppBar from '@mui/material/AppBar';
-// import Box from '@mui/material/Box';
-// import Toolbar from '@mui/material/Toolbar';
-// import Typography from '@mui/material/Typography';
-// import Button from '@mui/material/Button';
-// import IconButton from '@mui/material/IconButton';
-// import PublicIcon from '@mui/icons-material/TravelExplore';
-
-// export default function AppNav() {
-
-
-
-
-//   return (
-//     <Box sx={{ flexGrow: 1 }}>
-//       <AppBar color='primary' position="sticky">
-//         <Toolbar>
-//           <IconButton
-//             size="large"
-//             edge="start"
-//             color="secondary"
-//             aria-label="menu"
-//             sx={{ mr: 2 }}
-//           >
-//             <PublicIcon />
-//           </IconButton>
-//           <Typography component={Link} to="/" variant="div" sx={{ flexGrow: 1 }}>
-//             Project: CAJJ
-//           </Typography>
-//           <Button component={Link} to="/" variant="contained" color="secondary">Home</Button>
-//           <Button component={Link} to="/categories" variant="contained" color="secondary">Lessons / Categories</Button>
-//           <Button component={Link} to="/statistics" variant="contained" color="secondary">Statistics</Button>
-//           <Button component={Link} to="/login" variant="contained" color="secondary">Login</Button>
-//         </Toolbar>
-//       </AppBar>
-//     </Box>
-//   );
-// }
 
 
