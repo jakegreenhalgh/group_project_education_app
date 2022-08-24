@@ -1,0 +1,18 @@
+.Nav-Bar{
+    font-family: 'Staatliches', cursive;
+    font-size:xx-large;
+  }
+  
+  .Category-Descriptor{
+    font-family:'Staatliches', cursive;
+    font-size: larger;
+    text-decoration: none; 
+}
+
+  .Cat-Image>img {
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .Cat-Image>img:hover{
+    filter:sepia();
+  }

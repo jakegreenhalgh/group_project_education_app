@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* This is to keep everything in proportion to the scale. Potentially a merge conflict with Jack's styled c's. */
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 10px;
+  }
+}
+

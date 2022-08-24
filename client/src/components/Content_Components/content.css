@@ -1,0 +1,26 @@
+.header-container {
+    position: relative;
+}
+
+.header-image>img{
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    height: 600px;
+}
+
+/* drop-shadow(offset-x offset-y blur-radius color) */
+.article-header{
+    font-family:'Staatliches', cursive;
+    font-size: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+    filter: drop-shadow(2px 3px 2px white);
+}
+
+/* Placeholder font- it needs to be bolder */
+.article-body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-style: bold;
+}

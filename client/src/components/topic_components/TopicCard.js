@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { showContent } from '../../WebsiteService';
+import './topic.css';
 // Import NavBar here for use, same Nav throughout
 
 const TopicCard = ({ topic, categoryId, index }) =>{
@@ -15,6 +16,7 @@ const TopicCard = ({ topic, categoryId, index }) =>{
 
     return (
         <>
+        <div className='lazy'>
         <Link to={`/categories/${categoryId}/${topic._id}`} state={topic} ><h2>{topic.name}</h2></Link>
         <div className='Topic-body-text'>
             {topic.description}
@@ -24,6 +26,7 @@ const TopicCard = ({ topic, categoryId, index }) =>{
         </div>
         <div className='Topic-body-image'>
             <img src={topic.small_image}/>
+        </div>
         </div>
         </>
     )
