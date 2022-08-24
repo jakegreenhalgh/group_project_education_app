@@ -56,6 +56,7 @@ function OurWorldContainer() {
                 <h2>
                     {ourWorld[0].category}
                 </h2>
+                <p>{ourWorld[0].description}</p>
                 <div>
                    <Chart
                         chartType="LineChart"
@@ -72,15 +73,6 @@ function OurWorldContainer() {
                         options={tigerOptions}
                     />
                 </div>
-          </div>
-          <div>
-
-          </div>
-          <div>
-
-          </div>
-          <div>
-
           </div>
         </>
       )
