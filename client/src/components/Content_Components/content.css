@@ -24,3 +24,9 @@
     font-size: 2rem;
     font-style: bold;
 }
+
+.article-image>img{
+    width: 400px;
+    height: 400px;
+    filter: drop-shadow(2px 3px 2px black);
+}
