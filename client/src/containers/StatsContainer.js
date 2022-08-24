@@ -2,8 +2,6 @@ import { Chart } from "react-google-charts";
 import {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom"
 import {findActiveUser} from '../LoginService'
-import { Paper } from "@mui/material";
-import { Box } from "@mui/material";
 function StatsContainer () {
 
   const [user, setUser] = useState()
@@ -14,16 +12,30 @@ function StatsContainer () {
       findActiveUser().then((result => { setUser(result)} ))  
   }, [])
 
-
     if(!user){
       navigate("../login")
         } else {
 
+    const total_correct = () => {
+      let total = 0
+      for (let quiz of user.saved_quiz) {
+        total += quiz.score
+      }
+      return total
+    }
+
+    const total_incorrect = () => {
+      let total = 0
+      for (let quiz of user.saved_quiz) {
+        total += quiz.incorrect
+      }
+      return total
+    }
+
     const pieData = [
         ["Quiz", "Total Questions"],
-        ["Answered correctly", 11],
-        ["Answered incorrectly", 2],
-        ["Not yet attempted", 2]
+        ["Answered correctly", total_correct()],
+        ["Answered incorrectly", total_incorrect()]
       ];
       
     const pieOptions = {
@@ -45,24 +57,6 @@ function StatsContainer () {
     return (
       <>
       <h2>Hello {user.username}, here's your performance so far...</h2>
-
-      <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        '& > :not(style)': {
-          m: 1,
-          width: 400,
-          height: 400,
-        },
-      }}
-    >
-      <Paper elevation={0}></Paper>
-      <Paper />
-      <Paper elevation={3} />
-    </Box>
-  
-         <Paper variant="outlined" square elevation={20}>
             <Chart
               chartType="PieChart"
               data={pieData}
@@ -70,8 +64,6 @@ function StatsContainer () {
               width={"80%"}
               height={"400px"}
               />
-        </Paper>
-         <Paper variant="outlined"  elevation={3}>
         <h4>How many of our articles have you read?</h4>
           <Chart
               chartType="Bar"
@@ -80,7 +72,6 @@ function StatsContainer () {
               data={barData}
               options={barOptions}
               />
-        </Paper>
         </>
     )}
     }
