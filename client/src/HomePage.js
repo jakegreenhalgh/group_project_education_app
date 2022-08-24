@@ -6,6 +6,7 @@ import { css } from "@mui/material";
 import elephant_video from './assets/elephant_video.mp4'
 import './HomePage.css'
 import {Grid} from "@mui/material";
+import {Paper} from "@mui/material";
 
 
 import Card from '@mui/material/Card';
@@ -38,9 +39,13 @@ return(
 
  </div>
 
- {/* <div className="explainer-text">
-      <h3>'The Environment'...can kind of feel a little complicated to understand, right? We know it's important, but sometimes it can be hard to pinpoint why. OurWorld gives you useful information and lessons to help you understand the what, whens, wheres, hows and whys of climate blah blah blah blah</h3>
-</div>  */}
+      {/* <div className="explainer-text">
+      <Paper>
+            <div sx={{ maxWidth: 10, padding: 10}}>
+            <h3>'The Environment'...can kind of feel a little complicated to understand, right? We know it's important, but sometimes it can be hard to pinpoint why. OurWorld gives you useful information and lessons to help you understand the what, whens, wheres, hows and whys of climate blah blah blah blah</h3>
+            </div>
+      </Paper>
+      </div>  */}
 
 <div className="landing-cards">
 
@@ -59,7 +64,7 @@ return(
                               image="https://images.unsplash.com/photo-1502637098811-fa9526d2b659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"/>
                               <CardContent>
                               <Typography  variant="h5" component="div">
-                              OurStats        
+                              Stats        
                               </Typography>
                               </CardContent>
 

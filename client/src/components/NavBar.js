@@ -146,7 +146,7 @@ const NewAppBar = () => {
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <Button component={Link} to="/" sx={{ my: 2, color: 'white', display: 'block' }}>
-                  OurStats
+                  Stats
               </Button>
               <Button component={Link} to="/categories" sx={{ my: 2, color: 'white', display: 'block' }}>
                   Lessons
@@ -188,7 +188,7 @@ const NewAppBar = () => {
                 <MenuItem  onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">Account</Typography>
                 </MenuItem>
-                <MenuItem component={Link} to="/" onClick={handleCloseUserMenu}>
+                <MenuItem component={Link} to="/login" onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">Log Out</Typography>
                 </MenuItem>
 
