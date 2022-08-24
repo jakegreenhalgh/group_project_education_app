@@ -74,7 +74,9 @@ const loginRouter = function (collection) {
         });
       });
 
-// save new content to a user maybe who knows anymore
+// save new content to users
+
+// saves quiz
 
 router.put('/save/saved_quiz/:id', (req, res) => {
   const id = req.params.id;
@@ -89,10 +91,12 @@ router.put('/save/saved_quiz/:id', (req, res) => {
   });
 });
 
-router.put('/save/favrioutes/:id', (req, res) => {
+// saves favs
+
+router.put('/save/favourites/:id', (req, res) => {
   const id = req.params.id;
   collection
-  .updateMany({ _id: ObjectID(id)}, { $set: { favrioutes: req.body}})
+  .updateMany({ _id: ObjectID(id)}, { $set: { favourites: req.body}})
   .then(result => {
     res.json(result);
   })
