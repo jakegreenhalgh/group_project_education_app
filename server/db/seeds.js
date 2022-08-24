@@ -232,6 +232,10 @@ db.ourWorld.insertMany(
                                 "url": "https://blog.historicenvironment.scot/2016/02/scotlands-dynamic-coasts/",
                                 "image": "https://images.unsplash.com/photo-1494086540177-cb524d1bc2f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmlzaW5nJTIwc2VhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
                                 "text": "Rising sea levels are a result of increased global warming melting the ice caps. By 2050 to give you an idea of how much trouble we are in the sea level is expected to rise by as much as 22cm. Fun fact: The way the UK is going it's probably going to be much higher!! ",
+                                "estimated_number_2000": 10,
+                                "estimated_number_2005": 12, 
+                                "estimated_number_2015": 15, 
+                                "estimated_number_2022": 17, 
 
                             },
                             {
@@ -265,6 +269,10 @@ db.ourWorld.insertMany(
                                 "url": "https://www.amazonconservation.org/the-challenge/threats/",
                                 "image": "https://images.unsplash.com/photo-1602484894924-75eddc89d32b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
                                 "text": "The Amazon Rainforest has a tipping point at which it is no longer able to sustain itself and the life within it. This tipping point is thought to be 20%, and deforestation is already at 17%. If 20% is reached, the Amazon will turn into a dried out grassland",
+                                "estimated_tree_loss_2000": 25,
+                                "estimated_tree_loss_2005": 33, 
+                                "estimated_tree_loss_2015": 44, 
+                                "estimated_tree_loss_2022": 51, 
                             }
                    ]
         }
