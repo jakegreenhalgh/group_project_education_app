@@ -4,17 +4,24 @@ import {useLocation} from 'react-router-dom';
 import ContentCard from '../components/Content_Components/ContentCard';
 import QuizList from '../components/quiz_components/QuizList';
 import QuizContainer from './QuizContainer';
-
+import { findActiveUser, saveUserQuizData } from '../LoginService'
 
 // think we will need to pass something down to this like the name of the content added ?
 // constructs ContentContainer
 
 function ContentContainer() {
 
+    const [activeUser, setActiveUser] = useState(false);
+
+    useEffect(() => {
+        findActiveUser().then((result => { setActiveUser(result)} ))
+    }, [])
+
     const location = useLocation();
     const data = location.state;
-
-    const [content, setContent] = useState(data)
+console.log(data)
+    const [content, setContent] = useState(data[0])
+    const categoryId = data[1]
 
 
 
@@ -38,7 +45,7 @@ if ( content.type === "article"){
 // we said this would have no components but i think it will need two one for article and one for quiz
     return (
         <>
-            <ContentCard content={content}/>
+            <ContentCard content={content} user={activeUser} categoryId={categoryId}/>
         </>
       )
 }
