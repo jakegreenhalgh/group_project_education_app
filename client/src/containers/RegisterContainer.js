@@ -26,6 +26,7 @@ function RegisterContainer() {
             newFormData.username = newFormData.username.toLocaleLowerCase()
             newFormData.saved_quiz  = []
             newFormData.favourites = []
+            newFormData.read = []
             
             
             setFormData(newFormData)
