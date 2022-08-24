@@ -82,7 +82,7 @@ function StatsContainer () {
     return (
       <>
       <h2>Hello {user.username}, here's your performance so far...</h2>
-            <Chart
+            <Chart key={Date.now()}
               chartType="PieChart"
               data={pieData}
               options={pieOptions}
@@ -90,7 +90,7 @@ function StatsContainer () {
               height={"400px"}
               />
         <h4>How many of our articles have you read?</h4>
-          <Chart
+          <Chart key={Date.now()}
               chartType="Bar"
               width="80%"
               height="400px"
