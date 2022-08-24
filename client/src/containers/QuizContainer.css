@@ -1,4 +1,8 @@
-img {
+.img {
     position: relative;
     max-height: 50%;
+}
+
+.title {
+    padding-left: 40px;
 }

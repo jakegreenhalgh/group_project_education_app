@@ -22,13 +22,19 @@ function QuizCard ({number, question, choices, handleClick}) {
         }        
     }
 
+
+
+
     //  Maps out each question choice
     const choicesArray = choices.map((choice) => {
 
         return(
 
           <p key={choice.id} onClick={() => clicked(choice.isCorrect)}>
-          <FormControl>
+          <FormControl
+            disabled={hasBeenClicked}
+            control={<Radio />}
+          >
             <RadioGroup
               aria-labelledby="demo-radio-buttons-group-label"
               defaultValue="female"

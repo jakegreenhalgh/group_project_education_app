@@ -64,20 +64,18 @@ if(user){
 
 
   return (
+    
     <>
-    <div className='results'>
-      <Card
+    <Card
       elevation={12} 
       sx={{ 
               padding: 10,
           }}>
-      
       <h2>Results</h2>
       <h3>Final Score: {score} / {quiz.questions.length}</h3>
       <h5>Well done, you got {(score / quiz.questions.length) * 100}% ! </h5>
       <p>SHARE RESULTS??</p>
-      </Card>
-    </div>
+    </Card>
     </>
   )
 }

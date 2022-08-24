@@ -57,8 +57,7 @@ const onSubmit = (event) => {
 
             <div className='login'>
 
-
-                            <Card 
+                        <Card 
                             elevation={12} 
                             sx={{ 
                                     padding: 10,
@@ -87,7 +86,7 @@ const onSubmit = (event) => {
                                     <br/>
                                 <p>Not registered?</p>            
                                 <Link to="/register">Create an account</Link>
-                            </Card>
+                        </Card>
 
             </div>
                     

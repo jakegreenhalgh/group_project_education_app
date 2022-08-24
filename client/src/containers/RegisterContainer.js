@@ -1,6 +1,7 @@
 import {useState, useEffect, useReducer} from "react";
 import {getUsers, postUser} from '../LoginService'
 import { useNavigate, Link, useRoutes } from "react-router-dom";
+import { Card } from "@mui/material";
 
 
 
@@ -47,25 +48,41 @@ function RegisterContainer() {
     
     
         return (
+            <>
+
+            <div className='register'>
+
+
+                    <Card 
+                            elevation={12} 
+                            sx={{ 
+                                    padding: 10,
+                                }}>
+                                    <form onSubmit={onSubmit}  id="register-form">
+                                        <h2>Create Account</h2>
+                                        <div className="">
+                                            <label htmlFor="username">Username:</label> <br/>
+                                            <input onChange={onChange} type="text"
+                                            name="username" 
+                                            id="username" 
+                                            value={formData.username.toLowerCase()} required/>
+                                        </div> <br/>
+                                        <div className="">
+                                            <label htmlFor="password">Password:</label> <br/>
+                                            <input onChange={onChange} type="text"
+                                            name="password" 
+                                            id="password" 
+                                            value={formData.password} required/>
+                                        </div> <br/>
+                                        <input type="submit" value="Register" id="register" />
+                                    </form>
+                    </Card>
+
+            </div>
+                    
+            </>
     
-            <form onSubmit={onSubmit}  id="register-form">
-                <h2>Create Account</h2>
-                <div className="">
-                    <label htmlFor="username">Username:</label>
-                    <input onChange={onChange} type="text"
-                     name="username" 
-                     id="username" 
-                     value={formData.username.toLowerCase()} required/>
-                </div>
-                <div className="">
-                    <label htmlFor="password">Password:</label>
-                    <input onChange={onChange} type="text"
-                     name="password" 
-                     id="password" 
-                     value={formData.password} required/>
-                </div>
-                <input type="submit" value="Register" id="register" />
-            </form>
+
         )
 }
 
