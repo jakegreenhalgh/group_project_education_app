@@ -2,6 +2,7 @@
 import { getOurWorld } from '../WebsiteService';
 import {useState, useEffect}  from 'react';
 import { Chart } from "react-google-charts";
+import './ourStats.css'
 
 // constructs Category Container 
 function OurWorldContainer() {
@@ -81,12 +82,12 @@ function OurWorldContainer() {
 // passing down all the fetched categories as a prop to categories list
       return (
         <>
-          <div>
+          <div className='graph-wrapper'>
                 <h2>
                     {ourWorld[0].category}
                 </h2>
                 <p>{ourWorld[0].description}</p>
-                <div>
+                <div  className='graph-box'>
                    <Chart
                         chartType="LineChart"
                         width="100%"
@@ -94,6 +95,8 @@ function OurWorldContainer() {
                         data={leopardData}
                         options={leopardOptions}
                     />
+                </div>    
+                <div className='graph-box'>
                     <Chart
                         chartType="LineChart"
                         width="100%"
@@ -103,12 +106,14 @@ function OurWorldContainer() {
                     />
                 </div>
           </div>
-
-          <div>
-          <h2>
+    
+        <div className='graph-wrapper'>
+            <h2>
                     {ourWorld[1].category}
                 </h2>
+            
                 <p>{ourWorld[1].content[0].text}</p>
+                <div  className='graph-box'>
                 <Chart
                         chartType="LineChart"
                         width="100%"
@@ -116,14 +121,16 @@ function OurWorldContainer() {
                         data={seaData}
                         options={seaOptions}
                     />
-
+                </div>
           </div>
-          <div>
+          
+          <div className='graph-wrapper'>
           <h2>
                     {ourWorld[2].category}
                 </h2>
                 <p>{ourWorld[2].description}</p>
                        <p> {ourWorld[2].content[1].name} </p>
+                       <div  className='graph-box'>
                        <Chart
                         chartType="LineChart"
                         width="100%"
@@ -131,6 +138,7 @@ function OurWorldContainer() {
                         data={forestData}
                         options={forestOptions}
                     />
+                    </div>
           </div>
         
         </>
