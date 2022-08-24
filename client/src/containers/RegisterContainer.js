@@ -23,8 +23,11 @@ function RegisterContainer() {
         const onChange = (event) => {
             const newFormData = Object.assign({}, formData);
             newFormData[event.target.name] = event.target.value;
+            newFormData.username = newFormData.username.toLocaleLowerCase()
+            newFormData.saved_quiz  = []
+            newFormData.favourites = []
             
-            newFormData.logged_in = "false"
+            
             setFormData(newFormData)
         }
     
