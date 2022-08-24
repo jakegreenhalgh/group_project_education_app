@@ -2,14 +2,18 @@ import { Chart } from "react-google-charts";
 import {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom"
 import {findActiveUser} from '../LoginService'
+import { getCategories } from "../WebsiteService";
+import FavouritesList from "../components/favourites_components/FavourtiesList";
 function StatsContainer () {
 
   const [user, setUser] = useState()
+  const [categories, setCategories] = useState(false)
 
   const navigate = useNavigate();
 
   useEffect(() => {
-      findActiveUser().then((result => { setUser(result)} ))  
+      findActiveUser().then((result => { setUser(result)} ))
+      getCategories().then((result) => {setCategories(result)} )  
   }, [])
 
     if(!user){
@@ -32,6 +36,27 @@ function StatsContainer () {
       return total
     }
 
+    const total_read = user.read.length
+
+    const total_articles = () => {
+      if (categories) {
+      let total = 0
+      for (let index = 0; index < categories.length; index++) {
+        const category = categories[index];
+        for (let index = 0; index < category.content.length; index++) {
+          const content = category.content[index];
+          if (content.type === 'article') {
+            total +=1
+          }
+      
+    }
+      }
+      return total
+    }
+    }
+    const total_unread = total_articles() - total_read
+    
+
     const pieData = [
         ["Quiz", "Total Questions"],
         ["Answered correctly", total_correct()],
@@ -45,7 +70,7 @@ function StatsContainer () {
       
     const barData = [
         ["Hello", "Articles you've read", "Articles you've still to read"],
-        ["Score", 12, 4],
+        ["Score", total_read, total_unread],
       ];
       
     const barOptions = {
@@ -72,6 +97,8 @@ function StatsContainer () {
               data={barData}
               options={barOptions}
               />
+        <h4>Your favourite articles</h4>
+        <FavouritesList favourites={user.favourites} key={user.id}/>
         </>
     )}
     }

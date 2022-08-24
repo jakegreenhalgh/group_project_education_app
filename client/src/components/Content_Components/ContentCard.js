@@ -11,7 +11,8 @@ const saveFav = () => {
     let newFavData = {
       id: content._id,
       name: content.name,
-      catId: categoryId 
+      catId: categoryId,
+      topic : content 
     }
     if (contentFound === false) {
       user.favourites.push(newFavData)
@@ -21,7 +22,8 @@ const saveFav = () => {
     let newFavData = {
         id: content._id,
         name: content.name,
-        catId: categoryId 
+        catId: categoryId, 
+        topic: content
       }
     user.favourites.push(newFavData)
     saveUserFavData(user._id, user.favourites)
