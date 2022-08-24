@@ -59,7 +59,7 @@ const saveRead = () => {
     // Would like to like topic images to topic cards here- new component name?- Discuss with group */
         return (
         <>
-        { user ?<> <button onClick={saveFav}> Fav</button>  <button onClick={saveRead}> Mark as Read</button> </>: null}
+        { user ?<> <button onClick={saveFav} > Fav</button>  <button onClick={saveRead}> Mark as Read</button> </>: null}
             <div className='header-container'>
                 <div className='header-image'>
                 <img src={content.images[0].header}/>
