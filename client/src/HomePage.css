@@ -32,7 +32,8 @@
     justify-content: center;
     align-items: center;
     color: white;
-
+    /* font-size: 120%; */
+    font-size: 4vh;
   }
 
 a {
@@ -40,7 +41,10 @@ a {
    }
 
   .landing-cards {
-    padding: 100px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -49,7 +53,7 @@ a {
 
 
   .individual-cards {
-  padding: 50px;
+  padding: 40px;
   transition: transform .2s;
   margin: 0 auto;
 }
@@ -59,87 +63,25 @@ a {
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
 }
-
-.explainer-text {
-  padding: 50px;
-  max-width: 50%;
+.home-explainer{ 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
+  font-size: 2vh;
 }
 
-  
+.explainer-text{
+  padding: 20px;
+  text-align: center;
+}
 
-  /* * Version 2 */
-
-/*   
-  .landing-section video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .landing-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(6, 18, 39, 0.4);
-  } */
-
-
-  /** OLD VERSION */
-/* 
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .main {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .media {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .landing-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(6, 18, 39, 0.4);
-  }
-
-   */
+.home-explainer2{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  font-size: 2vh;
+}
