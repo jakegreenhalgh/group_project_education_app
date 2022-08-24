@@ -19,15 +19,16 @@ const TopicCard = ({ topic, categoryId, index }) =>{
         <>
         <div className='card'>
         <Link to={`/categories/${categoryId}/${topic._id}`} state={topic} ><h2>{topic.name}</h2></Link>
+        <br/>
         <div className='Topic-Header-Image'>
            <img src={topic.images[0].header}/>
-        </div>
         </div>
         <div className='Topic-header-text'>
             {topic.description}
         </div>
         <div className='Topic-body-image'>
             <img src={topic.small_image}/>
+        </div>
         </div>
         </>
     )

@@ -1,15 +1,16 @@
-
-
 .card{
     font-family: 'Staatliches', cursive;
     font-size:large;
     display:flex;
+    justify-content: right;
+    text-align: left;
   }
 
 .Topic-Header-Image>img{
-  width: 300px;
-  height: 300px;
-  justify-content: right;
+  width: 500px;
+  height: 400px;
+  display:flex;
+  padding-bottom: 5%;
 } 
 
 .card:hover {
