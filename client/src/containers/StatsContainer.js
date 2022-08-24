@@ -95,7 +95,7 @@ function StatsContainer () {
 
                 <div className="chart1">
                   <h4>Your Quiz Scores:</h4>
-                    <Chart
+                    <Chart key={Date.now()}
                       chartType="PieChart"
                       data={pieData}
                       options={pieOptions}
@@ -107,7 +107,7 @@ function StatsContainer () {
                 <div className="chart2">
 
                     <h4>Articles You've Read:</h4>
-                    <Chart
+                    <Chart key={Date.now()}
                       chartType="Bar"
                       data={barData}
                       options={barOptions}

@@ -37,3 +37,41 @@
     height: 400px;
     filter: drop-shadow(2px 3px 2px black);
 }
+
+.button-box{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    top: 65%;
+    left: 1%;
+
+
+}
+
+.user-button{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.735));
+    background-color: rgba(0, 0, 0, 0.335);
+    border-style: none;
+    box-shadow: none;
+    font-size: 30px;
+    color: rgb(216, 216, 216);
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.user-button:hover{
+    background-color: rgb(205, 207, 193);
+    color: black;
+}
+.user-button:active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(144, 212, 146);
+}
+
