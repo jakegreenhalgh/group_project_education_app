@@ -1,5 +1,9 @@
 import './content.css';
 import { findActiveUser, saveUserFavData,  saveUserReadData} from '../../LoginService'
+import {DoneAllIcon} from '@mui/icons-material/DoneAll';
+
+import Icon from '@mui/material/Icon';
+
 
 const ContentCard = ({ content , user , categoryId}) => {
 
@@ -59,17 +63,19 @@ const saveRead = () => {
     // Would like to like topic images to topic cards here- new component name?- Discuss with group */
         return (
         <>
-        { user ?<> <button onClick={saveFav} > Fav</button>  <button onClick={saveRead}> Mark as Read</button> </>: null}
             <div className='header-container'>
                 <div className='header-image'>
                 <img src={content.images[0].header}/>
                 </div>
 
                 <div className='article-header'> 
+                <div className='button-box'>
+                { user ?<> <button onClick={saveFav} className='user-button' > ❤ </button>  <button onClick={saveRead} className='user-button'>＋</button>  </>: null}
+                </div>
                 <h2>{content.name}</h2>
                 </div>
             </div>
-            
+           
             
             <div className='article-body'>
             <p>{content.text}</p>
