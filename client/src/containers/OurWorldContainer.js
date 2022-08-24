@@ -88,7 +88,7 @@ function OurWorldContainer() {
                 </h2>
                 <p>{ourWorld[0].description}</p>
                 <div  className='graph-box'>
-                   <Chart
+                   <Chart key={Date.now()}
                         chartType="LineChart"
                         width="100%"
                         height="400px"
@@ -97,7 +97,7 @@ function OurWorldContainer() {
                     />
                 </div>    
                 <div className='graph-box'>
-                    <Chart
+                    <Chart key={Date.now()}
                         chartType="LineChart"
                         width="100%"
                         height="400px"
@@ -114,7 +114,7 @@ function OurWorldContainer() {
             
                 <p>{ourWorld[1].content[0].text}</p>
                 <div  className='graph-box'>
-                <Chart
+                <Chart key={Date.now()}
                         chartType="LineChart"
                         width="100%"
                         height="400px"
@@ -131,7 +131,7 @@ function OurWorldContainer() {
                 <p>{ourWorld[2].description}</p>
                        <p> {ourWorld[2].content[1].name} </p>
                        <div  className='graph-box'>
-                       <Chart
+                       <Chart key={Date.now()}
                         chartType="LineChart"
                         width="100%"
                         height="400px"
