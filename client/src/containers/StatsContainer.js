@@ -76,9 +76,10 @@ function StatsContainer () {
       ];
       
     const barOptions = {
-        chartArea: { width: "80%" },
+        // chartArea: { width: "80%" },
         colors: ["#033F63", "#FEDC97"],
-        bars: "horizontal"
+        bars: "horizontal",
+
       };
 
     return (
@@ -98,7 +99,7 @@ function StatsContainer () {
                       chartType="PieChart"
                       data={pieData}
                       options={pieOptions}
-                      width="100%"
+                      width="50%"
                       height="50%"
                       />
                 </div>
@@ -110,8 +111,8 @@ function StatsContainer () {
                       chartType="Bar"
                       data={barData}
                       options={barOptions}
-                      width="100%"
-                      height="50%"
+                      width="50%%"
+                      height="80%"
                       />
                 </div>
 
