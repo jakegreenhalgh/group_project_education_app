@@ -3,9 +3,10 @@ import { findActiveUser, saveUserQuizData } from '../../LoginService'
 
 function QuizResults({score, quiz, user}) {
 
- 
+console.log(quiz.id)
+console.log(quiz._id);
 
-const updateUser = () => {
+const updateUser = () => {  
 
   if(user.saved_quiz.length !== 0){
     let compareArray = user.saved_quiz.map(quiz => quiz._id)

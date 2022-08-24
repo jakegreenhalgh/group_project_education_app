@@ -16,7 +16,10 @@ db.categories.insertMany(
                                                         {"header": "https://images.unsplash.com/photo-1633854678155-7c0756840d27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"},
                                                         {"body1": "https://images.unsplash.com/photo-1587894736501-4e0131bf60b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1464&q=80"} 
                                                         ],
-                                            "text": "Peatlands are incredibly special habitats, made up of highly adapted plant species and home to a range of rare and important wildlife. They absorb carbon from the atmosphere and lock it up in peat. This helps tackle climate change. Peatlands form over thousands of years – 1 metre of peat takes 1,000 years to form, and some peat bogs can be over 10 metres deep! WHY ARE PEATLANDS IMPORTANT? - The peatlands in the UK together store more carbon than all of our forests put together.If we look after peatlands well, they can be our climate ally. But if we damage them, they can contribute to climate change and are less able to help us adapt and respond.  Around 80% of the UK’s peatlands are degraded in some way, leaking climate change emissions out into our atmosphere.NATURE OF THE PEATLANDS -Peatlands are home to birds that like to nest in open ground, such as the curlew, golden plover and hen harrier. Red deer, mountain hares, lizards, amphibians, insect-eating sundew plants and a host of invertebrates also thrive on peatlands. Peatlands are also really important for people. For example, most of Scotland’s drinking water is filtered through peatlands. Healthy peatlands produce clean water which requires fewer chemicals to treat. SCOTLAND'S PEATLANDS - Peatland cover 20% of Scotland's land. The majority of the UK's peatlands are in Scotland. Scotland is home to the Flow Country, in Sutherland. This vast peatland is under consideration for World Heritage Site status because it is a globally-rare type of blanket peatland. The Flows alone holds 5% of the global blanket bog resources. But 80% of Scotland’s peatlands are degraded in some way.  This affects their ability to capture carbon, provide home for wildlife and produce clean water."						
+                                            "text": "Peatlands are incredibly special habitats, made up of highly adapted plant species and home to a range of rare and important wildlife.",
+                                            "text2": "They absorb carbon from the atmosphere and lock it up in peat. This helps tackle climate change. Peatlands form over thousands of years – 1 metre of peat takes 1,000 years to form, and some peat bogs can be over 10 metres deep!",
+                                            "text3": "WHY ARE PEATLANDS IMPORTANT? - The peatlands in the UK together store more carbon than all of our forests put together.If we look after peatlands well, they can be our climate ally. But if we damage them, they can contribute to climate change and are less able to help us adapt and respond.",
+                                            "text4":  "Around 80% of the UKs peatlands are degraded in some way, leaking climate change emissions out into our atmosphere.NATURE OF THE PEATLANDS -Peatlands are home to birds that like to nest in open ground, such as the curlew, golden plover and hen harrier. Red deer, mountain hares, lizards, amphibians, insect-eating sundew plants and a host of invertebrates also thrive on peatlands. Peatlands are also really important for people. For example, most of Scotland’s drinking water is filtered through peatlands. Healthy peatlands produce clean water which requires fewer chemicals to treat. SCOTLAND'S PEATLANDS - Peatland cover 20% of Scotland's land. The majority of the UK's peatlands are in Scotland. Scotland is home to the Flow Country, in Sutherland. This vast peatland is under consideration for World Heritage Site status because it is a globally-rare type of blanket peatland. The Flows alone holds 5% of the global blanket bog resources. But 80% of Scotland’s peatlands are degraded in some way.  This affects their ability to capture carbon, provide home for wildlife and produce clean water."						
                                         },
                                         {
                                             "_id": ObjectId(),
@@ -24,11 +27,39 @@ db.categories.insertMany(
                                             "name": "Example Article Number Two",
                                             "url": "https://www.google.co.uk/",
                                             "images": [
-                                                        {"header": "https://images.unsplash.com/photo-1633854678155-7c0756840d27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"},
+                                                        {"header": "https://images.unsplash.com/photo-1634822156819-9686a6569f95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2387&q=80"},
                                                         {"body1": "https://images.unsplash.com/photo-1587894736501-4e0131bf60b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1464&q=80"} 
                                                         ],
                                             "text": "Example Content Number Two. Example Content Number Two.  Example Content Number Two. Example Content Number Two. Example Content Number Two. Example Content Number Two."		
-                                        }		
+                                        },
+
+                                        {
+                                            "_id": ObjectId(),
+                                            "type": "article",
+                                            "name": "Coral Reefs and their Biodiversity",
+                                            "url": "https://coral.org/en/coral-reefs-101/",
+                                            "images": [
+                                                    {"header": "https://images.unsplash.com/photo-1543181831-dadb192c045f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"},
+                                                    {"body1": "https://images.unsplash.com/photo-1613117908785-381bafe45361?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2364&q=80"} 
+                                                    ],
+                                            "text1":"Coral reefs provide an important ecosystem for life underwater.they protect coastal areas by reducing the power of waves hitting the coast,and provide a crucial source of income for millions of people.",
+                                            "text2":"Coral reefs teem with diverse life. Thousands of species can be found living on one reef.The Great Barrier Reef contains over 400 coral species, 1,500 fish species, 4,000 mollusc species and six of the world's seven sea turtle species",
+                                            "text3":"The Coral Triangle - a coral-rich marine region in Southeast Asia that encompasses the waters between Indonesia, Malaysia, the Philippines and Papua New Guinea - is the most biologically diverse marine ecosystem on Earth."	
+                                            
+                                        },	
+
+                                        {
+                                            "_id": ObjectId(),
+                                            "type": "article",
+                                            "name": "Scotlands Wildflower meadows",
+                                            "url": "https://www.google.co.uk/",
+                                            "images": [
+                                                {"header": "https://images.unsplash.com/photo-1562772807-0adcd8c7b910?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"},
+                                                {"body1": "https://images.unsplash.com/photo-1505990482843-ba05d52c02c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80"} 
+                                                ],
+                                                "text": "Instead of plain cut grass on verges and public places, Historic Environment Scotland and many other organisations have made the descision to plant wildflowers on grassland.",
+                                                "text2": "These wildflowers provide a space for bees to pollinate and as a result is excellent for the environment."
+                                        }	
                                 ]
                 },
                 {   "category": "renewables",
@@ -56,6 +87,19 @@ db.categories.insertMany(
                                                     {"body1": "https://images.unsplash.com/photo-1587894736501-4e0131bf60b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1464&q=80"} 
                                                     ],
                                         "text": "Example Content Number Three. Example Content Number Three.  Example Content Number Three. Example Content Number Three. Example Content Number Three. Example Content Number Three."		
+                                    },
+                                    {
+                                        "_id": ObjectId(),
+                                        "type": "article",
+                                        "name": "Wave energy is renewable",
+                                        "url": "https://www.wwf.org.uk/updates/increased-offshore-wind-ambition-2030",
+                                        "images": [
+                                                    {"header": "https://images.unsplash.com/photo-1522643062452-f5b403123bdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdhdmUlMjBwb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"},
+                                                    {"body1": "https://images.unsplash.com/photo-1514911215070-20b41057e8ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2F2ZSUyMHBvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"} 
+                                                    ],
+                                        "text": "Tidal energy is power produced by the surge of ocean waters during the rise and fall of tides.",
+
+                                        "text2": "Tidal energy is a renewable source of energy. During the 20th century, engineers developed ways to use tidal movement to generate electricity in areas where there is a significant tidal range—the difference in area etween high tide and low tide. All methods use special generators to convert tidal energy into electricity."					
                                     },
                                     {
                                         "_id": ObjectId(),

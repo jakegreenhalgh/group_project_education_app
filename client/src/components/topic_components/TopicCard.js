@@ -14,16 +14,28 @@ const TopicCard = ({ topic, categoryId, index }) =>{
         // Show small topic image 
 
 
+
     return (
         <>
+
+        <div className='card'>
+        <Link to={`/categories/${categoryId}/${topic._id}`} state={topic} ><h2>{topic.name}</h2>
+        <br/>
+
         <div className='lazy'>
         <Link to={`/categories/${categoryId}/${topic._id}`} state={passData} ><h2>{topic.name}</h2></Link>
         <div className='Topic-body-text'>
             {topic.description}
         </div>
-        <div className='Topic-Header-Image'>
-           <img src={topic.images[0].header}/>
         </div>
+
+        <div className='Topic-Header-Image'>
+            <img src={topic.images[0].header}/>
+        </div>
+        <div className='Topic-header-text'>
+            {topic.description}
+        </div>
+        </Link>
         <div className='Topic-body-image'>
             <img src={topic.small_image}/>
         </div>

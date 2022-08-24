@@ -73,11 +73,16 @@ const saveRead = () => {
             
             <div className='article-body'>
             <p>{content.text}</p>
-            </div>
 
             <div className='article-image'>
             <img src={content.images[1].body1}/> 
             </div>
+            
+            <p>{content.text2}</p>
+            <p>{content.text3}</p>
+            <p>{content.text4}</p>
+            </div>
+
 
         </>
         
