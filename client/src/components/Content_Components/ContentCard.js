@@ -18,6 +18,9 @@ const ContentCard = ({ content }) => {
             
             <div className='article-body'>
             <p>{content.text}</p>
+            <p>{content.text2}</p>
+            <p>{content.text3}</p>
+            <p>{content.text4}</p>
             </div>
 
             <div className='article-image'>
