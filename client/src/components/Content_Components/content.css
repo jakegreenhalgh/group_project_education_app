@@ -23,11 +23,13 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
     font-style: bold;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .article-image>img{
     float: left;
-    padding-right: 10px;
+    padding-right: 15px;
     padding-left: 10px;
     width: 400px;
     height: 400px;

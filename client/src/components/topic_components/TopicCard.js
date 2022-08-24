@@ -18,7 +18,7 @@ const TopicCard = ({ topic, categoryId, index }) =>{
     return (
         <>
         <div className='card'>
-        <Link to={`/categories/${categoryId}/${topic._id}`} state={topic} ><h2>{topic.name}</h2></Link>
+        <Link to={`/categories/${categoryId}/${topic._id}`} state={topic} ><h2>{topic.name}</h2>
         <br/>
         <div className='Topic-Header-Image'>
            <img src={topic.images[0].header}/>
@@ -26,6 +26,7 @@ const TopicCard = ({ topic, categoryId, index }) =>{
         <div className='Topic-header-text'>
             {topic.description}
         </div>
+        </Link>
         <div className='Topic-body-image'>
             <img src={topic.small_image}/>
         </div>

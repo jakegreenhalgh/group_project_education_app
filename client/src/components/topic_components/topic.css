@@ -2,15 +2,16 @@
     font-family: 'Staatliches', cursive;
     font-size:large;
     display:flex;
-    justify-content: right;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
   }
 
 .Topic-Header-Image>img{
-  width: 500px;
-  height: 400px;
+  width: 700px;
+  height: 350px;
   display:flex;
   padding-bottom: 5%;
+  padding-right: 30%;
 } 
 
 .card:hover {
