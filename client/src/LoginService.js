@@ -47,6 +47,13 @@ export const saveUserFavData = (id, payload) => {
     headers: { 'Content-Type': 'application/json' }})
     .then(res => res.json())
 }
+export const saveUserReadData = (id, payload) => {
+    return fetch(saveUrl + "read/" + id,
+    {method: 'PUT',
+    body: JSON.stringify(payload),
+    headers: { 'Content-Type': 'application/json' }})
+    .then(res => res.json())
+}
 
 export const postUser = (payload) => {
     return fetch(baseURL, {

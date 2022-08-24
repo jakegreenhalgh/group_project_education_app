@@ -11,10 +11,12 @@ const updateUser = () => {
   if(user.saved_quiz.length !== 0){
     let compareArray = user.saved_quiz.map(quiz => quiz._id)
     let quizFound = compareArray.includes(quiz.id)
+    let quiz_length = quiz.questions.length
     let newQuizData = {
       id: quiz._id,
       name: quiz.name,
-      score: score
+      score: score,
+      incorrect: quiz_length - score
     }
     if (quizFound === false) {
       user.saved_quiz.push(newQuizData)
@@ -25,16 +27,19 @@ const updateUser = () => {
         let currentId = user.saved_quiz[index]
         if(currentId.id === quiz._id)
           currentId.score = score
+          currentId.incorrect = quiz_length-score
       }
       
       saveUserQuizData(user._id, user.saved_quiz)
     }
 
   }else{
+    let quiz_length = quiz.questions.length
     let QuizData = {
       id: quiz._id,
       name: quiz.name,
-      score: score
+      score: score,
+      incorrect: quiz_length - score
     }
     user.saved_quiz.push(QuizData)
     saveUserQuizData(user._id, user.saved_quiz)

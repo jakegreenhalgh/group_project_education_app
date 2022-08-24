@@ -11,7 +11,7 @@ app.use(express.json());
 const MongoClient = require('mongodb').MongoClient;
 const createRouter = require('./helpers/create_router.js');
 const loginRouter = require('./helpers/login_router.js');
-const worldRouter = require('./helpers/ourWorld_router');
+const worldRouter = require('./helpers/ourWorld_router.js');
 
 
 MongoClient.connect(databaseURL, { useUnifiedTopology: true })
@@ -25,7 +25,7 @@ MongoClient.connect(databaseURL, { useUnifiedTopology: true })
     const ourWorldRouter = worldRouter(ourWorldCollection);
     app.use('/api/categories', categoriesRouter);
     app.use('/api/users', userRouter)
-    app.use('api/ourWorld', ourWorldRouter);
+    app.use('/api/ourWorld', ourWorldRouter);
  })
  .catch(console.err);
 

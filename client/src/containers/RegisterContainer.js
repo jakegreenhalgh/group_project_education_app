@@ -23,8 +23,12 @@ function RegisterContainer() {
         const onChange = (event) => {
             const newFormData = Object.assign({}, formData);
             newFormData[event.target.name] = event.target.value;
-            
+            newFormData.username = newFormData.username.toLocaleLowerCase()
+            newFormData.saved_quiz  = []
+            newFormData.favourites = []
+            newFormData.read = []
             newFormData.logged_in = "false"
+            
             setFormData(newFormData)
         }
     
@@ -40,7 +44,7 @@ function RegisterContainer() {
                     postUser(formData)
                     navigate("../login")
         }else{
-            navigate("../loginerror")
+            navigate("../registererror")
         }
     }
 

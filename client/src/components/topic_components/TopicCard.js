@@ -6,7 +6,7 @@ import './topic.css';
 
 const TopicCard = ({ topic, categoryId, index }) =>{
     // Didn't use any states as I couldn't see we would require any, as we are displaying only. 
-
+    const passData = [topic, categoryId]
 
     // Insert Nav here
         // Show topic image header
@@ -17,11 +17,20 @@ const TopicCard = ({ topic, categoryId, index }) =>{
 
     return (
         <>
+
         <div className='card'>
         <Link to={`/categories/${categoryId}/${topic._id}`} state={topic} ><h2>{topic.name}</h2>
         <br/>
+
+        <div className='lazy'>
+        <Link to={`/categories/${categoryId}/${topic._id}`} state={passData} ><h2>{topic.name}</h2></Link>
+        <div className='Topic-body-text'>
+            {topic.description}
+        </div>
+        </div>
+
         <div className='Topic-Header-Image'>
-           <img src={topic.images[0].header}/>
+            <img src={topic.images[0].header}/>
         </div>
         <div className='Topic-header-text'>
             {topic.description}
