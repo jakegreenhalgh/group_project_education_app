@@ -113,22 +113,30 @@ db.users.insertMany(
         {
             "username": "andrew",
             "password": 123,
-            "logged_in": "false"
+            "logged_in": "false",
+            "saved_quiz":[],
+            "favourites":[]
         },
         {
             "username": "jacob",
             "password": 123,
-            "logged_in": "false"
+            "logged_in": "false",
+            "saved_quiz":[],
+            "favourites":[]
         },
         {
             "username": "jack",
             "password": 123,
-            "logged_in": "false"
+            "logged_in": "false",
+            "saved_quiz":[],
+            "favourites":[]
         },
         {
             "username": "carly",
             "password": 123,
-            "logged_in": "false"
+            "logged_in": "false",
+            "saved_quiz":[],
+            "favourites":[]
         }
     ]
 )

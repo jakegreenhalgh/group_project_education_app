@@ -4,8 +4,10 @@ const ContentCard = ({ content }) => {
         return (
         <>
             <div className='Nav-bar'>
-                
-            <p>{content.name}</p>
+            <img src={content.images[0].header}/>    
+            <h2>{content.name}</h2>
+            <p>{content.text}</p>
+            <img src={content.images[1].body1}/>  
             </div>
             <div className='Category-Header-Image'>
             </div>
