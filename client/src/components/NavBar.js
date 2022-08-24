@@ -153,7 +153,7 @@ const NewAppBar = () => {
                   Lessons
               </Button>
               <Button component={Link} to="/statistics" sx={{ my: 2, color: 'white', display: 'block' }}>
-                  My Work
+                  Profile
               </Button>
   
           </Box>
@@ -187,7 +187,7 @@ const NewAppBar = () => {
                 <MenuItem component={Link} to="/login" onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">Log In</Typography>
                 </MenuItem>
-                <MenuItem  onClick={handleCloseUserMenu}>
+                <MenuItem component={Link} to="/statistics" onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">Account</Typography>
                 </MenuItem>
                 <MenuItem component={Link} to="/login" onClick={handleCloseUserMenu}>

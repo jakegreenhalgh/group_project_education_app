@@ -52,7 +52,7 @@ function QuizCard ({number, question, choices, handleClick}) {
 
   return (
     <>
-    <div className='card'>
+    <div className='quizcard'>
       <Card 
           elevation={12} 
           sx={{ 
