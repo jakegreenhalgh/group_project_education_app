@@ -41,12 +41,11 @@ export const saveUserQuizData = (id, payload) => {
 }
 
 export const saveUserFavData = (id, payload) => {
-    return fetch(saveUrl + "favrioutes/" + id,
+    return fetch(saveUrl + "favourites/" + id,
     {method: 'PUT',
     body: JSON.stringify(payload),
     headers: { 'Content-Type': 'application/json' }})
     .then(res => res.json())
-    
 }
 
 export const postUser = (payload) => {
