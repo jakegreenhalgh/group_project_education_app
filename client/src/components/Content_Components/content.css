@@ -26,6 +26,9 @@
 }
 
 .article-image>img{
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
     width: 400px;
     height: 400px;
     filter: drop-shadow(2px 3px 2px black);
