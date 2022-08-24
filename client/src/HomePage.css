@@ -1,7 +1,9 @@
 
 
   /* *Version 3 */
-
+  * {
+    font-family:'Staatliches', cursive;
+  }
 
   .landing-section {
     position: relative;
@@ -33,12 +35,41 @@
 
   }
 
+a {
+    text-decoration: none;
+   }
 
-  .cards {
-    flex-direction: column;
-    justify-content: center;
+  .landing-cards {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
   }
+
+
+  .individual-cards {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.individual-cards:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.explainer-text {
+  padding: 50px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+  
 
   /* * Version 2 */
 

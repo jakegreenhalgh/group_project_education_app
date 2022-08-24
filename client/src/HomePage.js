@@ -6,6 +6,7 @@ import { css } from "@mui/material";
 import elephant_video from './assets/elephant_video.mp4'
 import './HomePage.css'
 import {Grid} from "@mui/material";
+import {Paper} from "@mui/material";
 
 
 import Card from '@mui/material/Card';
@@ -13,6 +14,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 
 
@@ -27,7 +29,7 @@ return(
             <div className="landing-text">
                   <h1>Learn why it needs protecting.</h1>
                   <h1>&nbsp;</h1>
-                  <h1>&nbsp;</h1>
+                  <KeyboardDoubleArrowDownIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} fontSize='large' />
                   <h1>&nbsp;</h1>
                   <h1>&nbsp;</h1>
                   <h1>&nbsp;</h1>
@@ -36,54 +38,66 @@ return(
 
 
  </div>
- {/* <div className="landing-section">
-            <img className="media" src="https://images.unsplash.com/photo-1563994798145-aac79dece602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80"/>
-            <div className="landing-text">
-                  <h1>Learn why it needs protecting.</h1>
+
+      {/* <div className="explainer-text">
+      <Paper>
+            <div sx={{ maxWidth: 10, padding: 10}}>
+            <h3>'The Environment'...can kind of feel a little complicated to understand, right? We know it's important, but sometimes it can be hard to pinpoint why. OurWorld gives you useful information and lessons to help you understand the what, whens, wheres, hows and whys of climate blah blah blah blah</h3>
             </div>
- </div> */}
+      </Paper>
+      </div>  */}
 
+<div className="landing-cards">
 
+      <div className="individual-cards">
+            <a href={'/'}>
 
-{/* OURSTATS / LESSONS CARDS */}
+            <Card 
+                  elevation={24} 
+                  sx={{ maxWidth: 400,
+                              '&:hover': {
+                        opacity: [0.9, 0.8, 0.7],
+                        }}}>
+                              <CardMedia
+                              component="img"
+                              height="300"
+                              image="https://images.unsplash.com/photo-1502637098811-fa9526d2b659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"/>
+                              <CardContent>
+                              <Typography  variant="h5" component="div">
+                              Stats        
+                              </Typography>
+                              </CardContent>
 
-<Grid container item spacing={6}>
+            </Card>
 
-    <Card sx={{ maxWidth: 400,
-                  '&:hover': {
-            opacity: [0.9, 0.8, 0.7],}}}>
-                  <CardMedia
-                  component="img"
-                  height="300"
-                  image="https://images.unsplash.com/photo-1502637098811-fa9526d2b659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"/>
-                  <CardContent>
-                  <Typography  variant="h5" component="div">
-                  OurStats        
-                  </Typography>
-                  </CardContent>
-                  <CardActions>
-                  <Button size="small">Learn More</Button>
-                  </CardActions>
-    </Card>;
+      </a>
+    </div>
 
-    <Card sx={{ maxWidth: 400,
-                  '&:hover': {
-            opacity: [0.9, 0.8, 0.7],}}}>
-                  <CardMedia
-                  component="img"
-                  height="300"
-                  image="https://images.unsplash.com/photo-1581242163695-19d0acfd486f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"/>
-                  <CardContent>
-                  <Typography  variant="h5" component="div">
-                  Lessons       
-                  </Typography>
-                  </CardContent>
-                  <CardActions>
-                  <Button size="small">Learn More</Button>
-                  </CardActions>
-    </Card>;
+    <div className="individual-cards">
+       <a href={'/categories'}>
 
-</Grid>
+            <Card 
+                  
+                  elevation={24} 
+                  sx={{ maxWidth: 400,
+                              '&:hover': {
+                        opacity: [0.9, 0.8, 0.7],
+                        }}}>
+                              <CardMedia
+                              component="img"
+                              height="300"
+                              image="https://images.unsplash.com/photo-1581242163695-19d0acfd486f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"/>
+                              <CardContent>
+                              <Typography  variant="h5" component="div">
+                              Lessons       
+                              </Typography>
+                              </CardContent>
+
+            </Card>
+      </a>
+    </div>
+
+</div>
 
 </>
 )

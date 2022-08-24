@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import QuizList from "../components/quiz_components/QuizList";
 import QuizResults from "../components/quiz_components/QuizResults";
 import { findActiveUser, saveUserData } from '../LoginService'
+import './QuizContainer.css'
 
 function QuizContainer({quiz}) {
 
@@ -38,11 +39,11 @@ function QuizContainer({quiz}) {
     return (
         <>
         <img src={quiz.images[0].header}/>
-        <h1>{quiz.name}</h1>
+        <h1 className="title">{quiz.name}</h1>
         
-        <h4>State Updates</h4>
+        {/* <h4>State Updates</h4>
         <p>Current Score: {score} / {quiz.questions.length} </p>
-        <p>Questions Attempted: {questionsAttempted}</p>
+        <p>Questions Attempted: {questionsAttempted}</p> */}
 
         {showResults ? 
             <QuizResults score={score} user={activeUser} quiz={quiz}/>
