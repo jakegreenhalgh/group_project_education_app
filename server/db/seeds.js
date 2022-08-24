@@ -48,7 +48,7 @@ db.categories.insertMany(
                                         {
                                             "_id": ObjectId(),
                                             "type": "article",
-                                            "name": "Example Article Number Two",
+                                            "name": "Scotlands Wildflower meadows",
                                             "url": "https://www.google.co.uk/",
                                             "images": [
                                                 {"header": "https://images.unsplash.com/photo-1560260240-c6ef90a163a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGlkYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"},
