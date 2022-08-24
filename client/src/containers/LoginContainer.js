@@ -2,6 +2,9 @@
 import {getUsers, loginActiveUser, logoutUsers} from '../LoginService'
 import {useState, useEffect, useRef}  from 'react';
 import { useNavigate, Link } from "react-router-dom";
+import './LoginContainer.css'
+
+import Card from '@mui/material/Card';
 
 
 // constructs login container
@@ -51,25 +54,43 @@ const onSubmit = (event) => {
 }
         return (
             <>
-            <form onSubmit={onSubmit} id="login-form">
-                <h2>Login In</h2>
-                <div className="">
-                    <label htmlFor="username">Name:</label>
-                    <input onChange={onChange} type="text"
-                     name="username" 
-                     id="username" 
-                     value={formData.username} required/>
-                </div>
-                <div className="">
-                    <label htmlFor="password">Password:</label>
-                    <input onChange={onChange} type="password"
-                     name="password" 
-                     id="password" 
-                     value={formData.password} required/>
-                </div>
-                <input type="submit" value="Login" id="login" />
-            </form>                
-            <Link to="/register">Create an account</Link>
+
+            <div className='login'>
+
+
+                            <Card 
+                            elevation={12} 
+                            sx={{ 
+                                    padding: 10,
+                                }}>
+                                    <form onSubmit={onSubmit} id="login-form">
+                                        <h2>Login Here</h2>
+                                        <div className="">
+                                            <label htmlFor="username">Name:</label> <br/>
+
+                                            <input onChange={onChange} type="text"
+                                            name="username" 
+                                            id="username" 
+                                            value={formData.username} required/>
+                                        </div>
+                                        <br/>
+                                        <div className="">
+                                            <label htmlFor="password">Password:</label> <br/>
+                                            <input onChange={onChange} type="password"
+                                            name="password" 
+                                            id="password" 
+                                            value={formData.password} required/>
+                                        </div>
+                                        <br/>
+                                        <input type="submit" value="Login" id="login" />
+                                    </form>    
+                                    <br/>
+                                <p>Not registered?</p>            
+                                <Link to="/register">Create an account</Link>
+                            </Card>
+
+            </div>
+                    
             </>
         )
     
