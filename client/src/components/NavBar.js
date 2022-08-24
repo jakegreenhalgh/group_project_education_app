@@ -68,7 +68,7 @@ const NewAppBar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Arial',
+              fontFamily: 'Staatliches',
               fontWeight: 800,
               fontSize: 60,
               letterSpacing: '.1rem',
@@ -145,6 +145,7 @@ const NewAppBar = () => {
           {/* Below renders menu buttons  ---------------------------------------------------------- */}
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+
               <Button component={Link} to="/ourstats" sx={{ my: 2, color: 'white', display: 'block' }}>
                   OurStats
               </Button>
@@ -163,7 +164,8 @@ const NewAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Andrew" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Andrew" 
+                src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -188,7 +190,7 @@ const NewAppBar = () => {
                 <MenuItem  onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">Account</Typography>
                 </MenuItem>
-                <MenuItem component={Link} to="/" onClick={handleCloseUserMenu}>
+                <MenuItem component={Link} to="/login" onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">Log Out</Typography>
                 </MenuItem>
 

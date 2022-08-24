@@ -1,0 +1,17 @@
+.card {
+    padding-top: 20px;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+/* .individual-answer {
+    padding: 20px;
+  }
+  
+  .individual-answer:hover {
+    cursor: pointer;
+    background-color: bisque;
+  } */
