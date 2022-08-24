@@ -1,7 +1,7 @@
 // Components - CategoryList, CategoryCard
 import { getCategories } from '../WebsiteService';
 import {useState, useEffect}  from 'react';
-import CategoryList from '../components/category_components/CategoryList';
+import CategoryList from '../components/category_components/CategoryList'; 
 
 // constructs Category Container 
 function CategoryContainer() {
@@ -25,4 +25,4 @@ function CategoryContainer() {
 }
 
 export default CategoryContainer;
-
+ 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import QuizList from "../components/quiz_components/QuizList";
 import QuizResults from "../components/quiz_components/QuizResults";
+import { findActiveUser, saveUserData } from '../LoginService'
 
 function QuizContainer({quiz}) {
 
@@ -9,8 +10,12 @@ function QuizContainer({quiz}) {
     const [score, setScore] = useState(0);
     const [questionsAttempted, setQuestionsAttempted] = useState(0);
     const [showResults, setShowResults] = useState(false);
+    const [activeUser, setActiveUser] = useState(false);
 
-
+    useEffect(() => {
+        findActiveUser().then((result => { setActiveUser(result)} ))
+    }, [])
+    
     // function to modify state passed down to Quizcard
 
     const handleClick = (isCorrect) => {
@@ -40,7 +45,7 @@ function QuizContainer({quiz}) {
         <p>Questions Attempted: {questionsAttempted}</p>
 
         {showResults ? 
-            <QuizResults score={score} quiz={quiz}/>
+            <QuizResults score={score} user={activeUser} quiz={quiz}/>
         :
             <QuizList handleClick={handleClick} quiz={quiz} />
         }       

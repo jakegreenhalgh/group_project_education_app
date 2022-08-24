@@ -74,6 +74,38 @@ const loginRouter = function (collection) {
         });
       });
 
+// save new content to users
+
+// saves quiz
+
+router.put('/save/saved_quiz/:id', (req, res) => {
+  const id = req.params.id;
+  collection
+  .updateMany({ _id: ObjectID(id)}, { $set: { saved_quiz: req.body}})
+  .then(result => {
+    res.json(result);
+  })
+  .catch((err) => {
+    res.status(500);
+    res.json({ status: 500, error: err });
+  });
+});
+
+// saves favs
+
+router.put('/save/favourites/:id', (req, res) => {
+  const id = req.params.id;
+  collection
+  .updateMany({ _id: ObjectID(id)}, { $set: { favourites: req.body}})
+  .then(result => {
+    res.json(result);
+  })
+  .catch((err) => {
+    res.status(500);
+    res.json({ status: 500, error: err });
+  });
+});
+
 router.post("/", (req, res) => {
   const newItem = req.body;
   collection.insertOne(newItem)

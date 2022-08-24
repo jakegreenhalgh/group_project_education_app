@@ -1,6 +1,7 @@
 import { Chart } from "react-google-charts";
 import React from "react";
-
+import { Paper } from "@mui/material";
+import { Box } from "@mui/material";
 function StatsContainer () {
 
     let name = "PersonName"
@@ -29,24 +30,45 @@ function StatsContainer () {
       };
 
     return (
-        <>
-            <h2>Hello {name}, here's your performance so far...</h2>
-          <Chart
-            chartType="PieChart"
-            data={pieData}
-            options={pieOptions}
-            width={"80%"}
-            height={"400px"}
-        />
+      <>
+      <h2>Hello {name}, here's your performance so far...</h2>
+
+      <Box
+      sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        '& > :not(style)': {
+          m: 1,
+          width: 400,
+          height: 400,
+        },
+      }}
+    >
+      <Paper elevation={0}></Paper>
+      <Paper />
+      <Paper elevation={3} />
+    </Box>
+  
+         <Paper variant="outlined" square elevation={20}>
+            <Chart
+              chartType="PieChart"
+              data={pieData}
+              options={pieOptions}
+              width={"80%"}
+              height={"400px"}
+              />
+        </Paper>
+         <Paper variant="outlined"  elevation={3}>
         <h4>How many of our articles have you read?</h4>
-        <Chart
-            chartType="Bar"
-            width="80%"
-            height="400px"
-            data={barData}
-            options={barOptions}
-        />
-              </>
+          <Chart
+              chartType="Bar"
+              width="80%"
+              height="400px"
+              data={barData}
+              options={barOptions}
+              />
+        </Paper>
+        </>
     )
     }
 
