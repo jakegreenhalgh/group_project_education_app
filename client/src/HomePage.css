@@ -1,0 +1,114 @@
+
+
+  /* *Version 3 */
+
+
+  .landing-section {
+    position: relative;
+    width: 100%;
+  }
+  .landing-section video {
+    width: 100%;
+    display: block;
+  }
+  .landing-section:before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .landing-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+  }
+
+
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* * Version 2 */
+
+/*   
+  .landing-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .landing-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 18, 39, 0.4);
+  } */
+
+
+  /** OLD VERSION */
+/* 
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .landing-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 18, 39, 0.4);
+  }
+
+   */
