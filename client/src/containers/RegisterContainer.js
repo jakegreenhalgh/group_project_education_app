@@ -2,7 +2,7 @@ import {useState, useEffect, useReducer} from "react";
 import {getUsers, postUser} from '../LoginService'
 import { useNavigate, Link, useRoutes } from "react-router-dom";
 import { Card } from "@mui/material";
-
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
 
 
 function RegisterContainer() {
@@ -54,7 +54,7 @@ function RegisterContainer() {
         return (
             <>
 
-            <div className='register'>
+            <div className='register-profile'>
 
 
                     <Card 
@@ -62,6 +62,7 @@ function RegisterContainer() {
                             sx={{ 
                                     padding: 10,
                                 }}>
+                                    <PersonAddIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} fontSize='large' />
                                     <form onSubmit={onSubmit}  id="register-form">
                                         <h2>Create Account</h2>
                                         <div className="">

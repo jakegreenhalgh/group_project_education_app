@@ -16,6 +16,9 @@ import OurWorldContainer from "./OurWorldContainer";
 import AppNav from "../components/NavBar";
 
 
+import Footer from "../components/Footer";
+
+
 
 function NavgationContainer() {
 
@@ -47,6 +50,7 @@ return (
             <Route exact path="*"></Route>
         </ Routes>
 
+        <Footer />
     </Router>
 );
 }

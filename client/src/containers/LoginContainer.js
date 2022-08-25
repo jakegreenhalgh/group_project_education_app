@@ -5,6 +5,7 @@ import { useNavigate, Link } from "react-router-dom";
 import './LoginContainer.css'
 
 import Card from '@mui/material/Card';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 
 // constructs login container
@@ -62,6 +63,7 @@ const onSubmit = (event) => {
                             sx={{ 
                                     padding: 10,
                                 }}>
+                                    <AccountCircleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} fontSize='large' />
                                     <form onSubmit={onSubmit} id="login-form">
                                         <h2>Login Here</h2>
                                         <div className="">

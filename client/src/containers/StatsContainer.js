@@ -99,7 +99,7 @@ function StatsContainer () {
                       chartType="PieChart"
                       data={pieData}
                       options={pieOptions}
-                      width="50%"
+                      width="100%"
                       height="50%"
                       />
                 </div>
@@ -111,7 +111,7 @@ function StatsContainer () {
                       chartType="Bar"
                       data={barData}
                       options={barOptions}
-                      width="50%%"
+                      width="100%%"
                       height="80%"
                       />
                 </div>

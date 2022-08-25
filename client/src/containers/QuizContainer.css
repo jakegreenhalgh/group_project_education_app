@@ -1,8 +1,13 @@
-.img {
+.quiz-image {
     position: relative;
-    max-height: 50%;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
 }
+/* .quiz-image.trim {
+    max-height: 20%;
+} */
 
-.title {
+.quiz-title {
     padding-left: 40px;
 }

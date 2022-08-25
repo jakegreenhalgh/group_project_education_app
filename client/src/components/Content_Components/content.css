@@ -6,6 +6,8 @@
     width: calc(100% - 10px);
     margin-left: 5px;
     height: 600px;
+    object-fit: cover;
+
 }
 
 /* drop-shadow(offset-x offset-y blur-radius color) */

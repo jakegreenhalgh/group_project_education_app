@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { findActiveUser, saveUserQuizData } from '../../LoginService'
 import { Card } from '@mui/material'
+import './QuizResults.css'
+
+
 function QuizResults({score, quiz, user}) {
 
 console.log(quiz.id)
@@ -66,22 +69,24 @@ if(user){
 //     }
 // }
   
-
+let percentage = Math.round((score / quiz.questions.length) * 100)
 
 
   return (
     
     <>
-    <Card
-      elevation={12} 
-      sx={{ 
-              padding: 10,
-          }}>
-      <h2>Results</h2>
-      <h3>Final Score: {score} / {quiz.questions.length}</h3>
-      <h5>Well done, you got {(score / quiz.questions.length) * 100}% ! </h5>
-      <p>SHARE RESULTS??</p>
-    </Card>
+    <div className='quiz-results'>
+      <Card
+        elevation={12} 
+        sx={{ 
+                padding: 10,
+            }}>
+        <h1>Results:</h1>
+        <h1>{score} out of {quiz.questions.length}</h1>
+        <h3>Well done! You got {percentage}% </h3>
+        <p>You can view your results in your profile page</p>
+      </Card>
+    </div>
     </>
   )
 }

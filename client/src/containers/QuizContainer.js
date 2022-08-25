@@ -38,8 +38,8 @@ function QuizContainer({quiz}) {
 
     return (
         <>
-        <img src={quiz.images[0].header}/>
-        <h1 className="title">{quiz.name}</h1>
+        <img className="quiz-image" src={quiz.images[0].header}/>
+        <h1 className="quiz-title">{quiz.name}</h1>
         
         {/* <h4>State Updates</h4>
         <p>Current Score: {score} / {quiz.questions.length} </p>

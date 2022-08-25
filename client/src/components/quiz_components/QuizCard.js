@@ -29,21 +29,20 @@ function QuizCard ({number, question, choices, handleClick}) {
     const choicesArray = choices.map((choice) => {
 
         return(
-
+          
           <p key={choice.id} onClick={() => clicked(choice.isCorrect)}>
-          <FormControl
-            disabled={hasBeenClicked}
-            control={<Radio />}
-          >
-            <RadioGroup
-              aria-labelledby="demo-radio-buttons-group-label"
-              defaultValue="female"
-              name="radio-buttons-group"
-              >
-                <FormControlLabel value={choice.text} control={<Radio />} label={choice.text}  />
-                
-            </RadioGroup>
-          </FormControl>
+            <FormControl
+              disabled={hasBeenClicked}
+              control={<Radio />}
+            >
+              <RadioGroup
+                defaultValue="female"
+                name="radio-buttons-group"
+                >
+                  <FormControlLabel value={choice.text} control={<Radio />} label={choice.text}  />
+                  
+              </RadioGroup>
+            </FormControl>
           </p>
 
         // <p key={choice.id} onClick={() => clicked(choice.isCorrect)}>{choice.text} </p>

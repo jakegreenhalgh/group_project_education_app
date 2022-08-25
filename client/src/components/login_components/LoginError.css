@@ -1,8 +1,7 @@
-.quiz-results {
-    padding: 50px;
+.login-error {
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 35%;
 }
