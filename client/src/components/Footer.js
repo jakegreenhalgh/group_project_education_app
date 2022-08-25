@@ -9,9 +9,9 @@ function Footer() {
         <a className="repo-link" href="https://github.com/jakegreenhalgh/group_project_education_app">
             <p> GitHub Repo </p>
         </a>
-        <p> Made with Love by C.A.J.J </p>
+        <p> Made with love and rage by C.A.J.J </p>
         
-        <p> Created &copy;{new Date().getFullYear()} </p>
+        <p> Created in {new Date().getFullYear()} &copy; </p>
     </div>
     </>
   );

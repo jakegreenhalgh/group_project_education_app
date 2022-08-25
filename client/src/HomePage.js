@@ -44,9 +44,9 @@ return(
             <h2 className="explainer-text">
             'The Environment'. We know its important, but sometimes we can't exactly explain why. 
             <br/> <br/>  
-            Developed with the BBC, OurWorld gives you useful information and lessons to help you 
+            Developed with the BBC, OurWorld gives you useful information and lessons to help 
             <br/>  
-            understand the whats, whens, and most importantly, whys of climate change. Etc etc etc.
+            understand the whats, whens, and most importantly, whys of climate change. Etc etc.
             <br/> <br/>  
             Click on the links below to learn and test your knowledge.
             </h2>

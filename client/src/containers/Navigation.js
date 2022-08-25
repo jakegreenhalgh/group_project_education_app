@@ -30,6 +30,8 @@ function NavgationContainer() {
 return (
     
     <Router>
+
+        <div className="wrapper">
             <AppNav />
             {/* <ButtonAppBar/> */}
 
@@ -51,6 +53,8 @@ return (
         </ Routes>
 
         <Footer />
+
+        </div>
     </Router>
 );
 }
