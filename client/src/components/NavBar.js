@@ -1,6 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import {findActiveUser} from '../LoginService'
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -23,6 +24,14 @@ import PublicIcon from '@mui/icons-material/Public';
 
 const NewAppBar = () => {
 
+
+const [user, setUser] = useState()
+
+useEffect(() => {
+  findActiveUser().then((result => { setUser(result)} ))
+}, [])
+
+console.log(user);
 
 // * state and functions for collapsing the menu to burger
 
@@ -48,6 +57,19 @@ const NewAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+
+  // ! IN PROGRESS LOGIN FIRST LETTER ICON
+  // let username = () => {
+  //   if (user.username) {
+
+  //     alt={`${user.username}`} src="/static/images/avatar/2.jpg"
+  
+      
+  //   }
+
+
+
 
 
 
@@ -167,6 +189,10 @@ const NewAppBar = () => {
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar 
+
+              // ! IN PROGRESS LOGIN FIRST LETTER ICON
+                // alt={`${user.username}`} src="/static/images/avatar/2.jpg"
+
                 // alt="Andrew" src="/static/images/avatar/2.jpg" 
                 />
               </IconButton>
