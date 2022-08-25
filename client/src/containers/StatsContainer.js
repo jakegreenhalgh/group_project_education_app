@@ -120,7 +120,7 @@ function StatsContainer () {
              </div>
 
           <div className="fave-list">
-            <h4>Your favourite articles</h4>
+            <h4>Your favourite articles:</h4>
             <FavouritesList favourites={user.favourites} key={user.id}/>
 
           </div>
