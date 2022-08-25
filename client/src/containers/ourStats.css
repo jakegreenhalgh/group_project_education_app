@@ -14,9 +14,10 @@
 
 /* new import font goes here */
 .graph-wrapper > p{
+    
     margin-left: 20px;
     margin-right: 20px;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: 'Josefin Sans';
 }
 
 

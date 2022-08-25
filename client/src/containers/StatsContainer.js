@@ -71,7 +71,7 @@ function StatsContainer () {
       };
       
     const barData = [
-        [" ", "Articles you've read", "Articles you've still to read"],
+        [" ", "Read", "Unread"],
         [" ", total_read, total_unread],
       ];
       
@@ -88,9 +88,13 @@ function StatsContainer () {
     <h1 className="profile-title">Hi {user.username},</h1> 
     <h2 className="profile-sub">here's your performance so far...</h2>
 
-      <div className="stats-box-main">
+      <div className="">
 
+      <div className="fave-list">
+            <h4>Your favourite articles</h4>
+            <FavouritesList favourites={user.favourites} key={user.id}/>
 
+          </div>
             <div className="stats-box-sub">
 
                 <div className="chart1">
@@ -100,7 +104,7 @@ function StatsContainer () {
                       data={pieData}
                       options={pieOptions}
                       width="100%"
-                      height="50%"
+                      height="100%"
                       />
                 </div>
 
@@ -111,19 +115,15 @@ function StatsContainer () {
                       chartType="Bar"
                       data={barData}
                       options={barOptions}
-                      width="100%%"
-                      height="80%"
+                      width="100%"
+                      height="100%"
                       />
                 </div>
 
 
              </div>
 
-          <div className="fave-list">
-            <h4>Your favourite articles</h4>
-            <FavouritesList favourites={user.favourites} key={user.id}/>
-
-          </div>
+     
 
         </div>
         </>
