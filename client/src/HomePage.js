@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import { CardMedia } from '@mui/material';
 import { css } from "@mui/material";
 import elephant_video from './assets/elephant_video.mp4'
+import ourworld_short from './assets/ourworld_short.mp4'
 import './HomePage.css'
 import {Grid} from "@mui/material";
 import {Paper} from "@mui/material";
@@ -25,7 +26,7 @@ return(
 
  <div className="landing-section">
       {/* <div className="overlay"/> */}
-            <video className="media" src={elephant_video} autoPlay loop muted/>
+            <video className="media" src={ourworld_short} autoPlay loop muted/>
             <div className="landing-text">
                   <h1>&nbsp;</h1>
                   <h1>Learn why it needs protecting.</h1>
