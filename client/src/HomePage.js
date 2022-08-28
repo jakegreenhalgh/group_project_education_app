@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import { CardMedia } from '@mui/material';
 import { css } from "@mui/material";
 import elephant_video from './assets/elephant_video.mp4'
+import ourworld_short from './assets/ourworld_short.mp4'
 import './HomePage.css'
 import {Grid} from "@mui/material";
 import {Paper} from "@mui/material";
@@ -25,12 +26,11 @@ return(
 
  <div className="landing-section">
       {/* <div className="overlay"/> */}
-            <video className="media" src={elephant_video} autoPlay loop muted/>
+            <video className="media" src={ourworld_short} autoPlay loop muted/>
             <div className="landing-text">
+                  <h1>&nbsp;</h1>
                   <h1>Learn why it needs protecting.</h1>
-                  <h1>&nbsp;</h1>
                   <KeyboardDoubleArrowDownIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} fontSize='large' />
-                  <h1>&nbsp;</h1>
                   <h1>&nbsp;</h1>
                   <h1>&nbsp;</h1>
                   <h1>&nbsp;</h1>
@@ -39,13 +39,22 @@ return(
 
  </div>
 
-      {/* <div className="explainer-text">
-      <Paper>
+<div className="home-explainer">
+      <Paper elevation={3}>
             <div sx={{ maxWidth: 10, padding: 10}}>
-            <h3>'The Environment'...can kind of feel a little complicated to understand, right? We know it's important, but sometimes it can be hard to pinpoint why. OurWorld gives you useful information and lessons to help you understand the what, whens, wheres, hows and whys of climate blah blah blah blah</h3>
+            <h2 className="explainer-text">
+            'The Environment'. We know its important, but sometimes we can't exactly explain why. 
+            <br/> <br/>  
+            Developed with the BBC, OurWorld gives you useful information and lessons to help 
+            <br/>  
+            understand the whats, whens, and most importantly, whys of climate change. Etc etc.
+            <br/> <br/>  
+            Click on the links below to learn and test your knowledge.
+            </h2>
             </div>
       </Paper>
-      </div>  */}
+      
+</div> 
 
 <div className="landing-cards">
 
@@ -97,7 +106,22 @@ return(
       </a>
     </div>
 
-</div>
+
+</div> 
+
+    {/* <div className="home-explainer2">
+      <Paper elevation={3}>
+            <div sx={{ maxWidth: 10, padding: 10}}>
+            <h2 className="explainer-text"> 
+            Important - this website is under development. 
+            <br/>
+            Therefore, some are some elements of the functionality that are incomplete.
+            </h2>
+            </div>
+      </Paper>
+      
+
+      </div> */}
 
 </>
 )

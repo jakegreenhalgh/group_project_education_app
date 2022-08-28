@@ -11,7 +11,7 @@ import FormControl from '@mui/material/FormControl';
 
 function QuizCard ({number, question, choices, handleClick}) {
 
-    // State allows only one click for each question with an if statement 'gate'. Not sure if it's the most elegant solution.
+    // State allows only one click for each question with an if statement 'gate'.
     const [hasBeenClicked, setHasBeenClicked] = useState(false)
 
     // Allows passing of answer back up to QuizContainer via handleClick IF hasBeenClicked is not true.
