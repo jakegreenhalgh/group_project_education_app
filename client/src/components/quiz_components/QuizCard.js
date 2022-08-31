@@ -45,7 +45,6 @@ function QuizCard ({number, question, choices, handleClick}) {
             </FormControl>
           </p>
 
-        // <p key={choice.id} onClick={() => clicked(choice.isCorrect)}>{choice.text} </p>
         )
     })
 
@@ -70,15 +69,3 @@ function QuizCard ({number, question, choices, handleClick}) {
 }
 
 export default QuizCard
-
-
-
-//*  Previous idea for one-click gate
-
-    // const clicked = (selectedChoice) => {
-    //     let hasBeenClicked = 0
-    //     if(hasBeenClicked < 1){
-    //         handleClick(selectedChoice)
-    //         hasBeenClicked += 1
-    //     }
-    // }

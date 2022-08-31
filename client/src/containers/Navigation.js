@@ -22,18 +22,12 @@ import Footer from "../components/Footer";
 
 function NavgationContainer() {
 
-/* <Route exact path="/" element={<HomePage></HomePage>} /> */
-// renders our navgation bar (will most likely be a header)
-// / is our home page
-// /catogries is a list of all categories
-// /categories/:id is the link to all topics in a category 
 return (
     
     <Router>
 
         <div className="wrapper">
             <AppNav />
-            {/* <ButtonAppBar/> */}
 
             
 

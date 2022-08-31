@@ -23,10 +23,3 @@ export const getOurWorld = () => {
 
 
 
-
-    // (req, res => res.json(categories[req.params.id]) ??
-
-    // (req, res => res.json(categories[req.params.id]) ??
-
-
-

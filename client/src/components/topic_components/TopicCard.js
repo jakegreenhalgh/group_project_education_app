@@ -1,17 +1,11 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { showContent } from '../../WebsiteService';
 import './topic.css';
-// Import NavBar here for use, same Nav throughout
 
 const TopicCard = ({ topic, categoryId, index }) =>{
-    // Didn't use any states as I couldn't see we would require any, as we are displaying only. 
+
     const passData = [topic, categoryId]
 
-    // Insert Nav here
-        // Show topic image header
-        // Show topic text 
-        // Show small topic image 
+
 
 
 

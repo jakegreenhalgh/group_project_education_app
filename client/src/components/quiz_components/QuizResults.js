@@ -56,19 +56,6 @@ if(user){
   updateUser()
 }
 
-//   const handleUpdate = () => {
-//     if(!user){
-//     booking.checked_in = "true";
-//     updateCheckedIn(booking._id)
-//     updateBookings(booking._id, booking)
-//     }
-//     else{
-//         booking.checked_in = "false";
-//         updateCheckedIn(booking._id)
-//         updateBookings(booking._id, booking)
-//     }
-// }
-  
 let percentage = Math.round((score / quiz.questions.length) * 100)
 
 
