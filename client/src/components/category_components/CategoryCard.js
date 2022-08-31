@@ -1,8 +1,6 @@
-import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
-import TopicContainer from "../../containers/TopicContainer";
+import { Link } from "react-router-dom";
 import './category.css';
-// Import the nav bar 
-// Topic import/ route required? 
+
 
 
 const CategoryCard = ({ category }) => {

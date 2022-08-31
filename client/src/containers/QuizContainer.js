@@ -41,9 +41,6 @@ function QuizContainer({quiz}) {
         <img className="quiz-image" src={quiz.images[0].header}/>
         <h1 className="quiz-title">{quiz.name}</h1>
         
-        {/* <h4>State Updates</h4>
-        <p>Current Score: {score} / {quiz.questions.length} </p>
-        <p>Questions Attempted: {questionsAttempted}</p> */}
 
         {showResults ? 
             <QuizResults score={score} user={activeUser} quiz={quiz}/>

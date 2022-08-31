@@ -1,4 +1,6 @@
 import FavouritesCard from "./FavouritesCard"
+
+
 const FavouritesList = (({favourites}) => {
     const favouritesNodes = favourites.map((favourite) => {
         return <FavouritesCard
